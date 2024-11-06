@@ -13,10 +13,8 @@ test.describe('HomePage', () => {
   const homePage = new HomePage(page);
   //проверяем тайтл
   
-  await expect(page).toHaveTitle("React App");
   await homePage.titleAssertion();
   //проверяем вебадрес
-  await expect(page).toHaveURL("/");
   await homePage.checkPageUrl();
   //проверяем герб
   await homePage.armAssertion();

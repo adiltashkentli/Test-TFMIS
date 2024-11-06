@@ -25,7 +25,7 @@ class HomePage {
     async headTextsAssertion() {
         const text1 = await this.page.locator(Locators.MainPage.headText).innerText();
         await expect(text1).toContain('Министерство Финансов Республики Таджикистан'); // проверяем 1-й заголовок
-        const text2 = await this.page.getByText('ИНФОРМАЦИОННАЯ СИСТЕМА УПРАВЛЕНИЯ ГОСУДАРСТВЕННЫМИ ФИНАНСАМИ').innerText();
+        const text2 = await this.page.locator(Locators.MainPage.headTextSec).innerText();
         await expect(text2).toContain('ИНФОРМАЦИОННАЯ СИСТЕМА УПРАВЛЕНИЯ ГОСУДАРСТВЕННЫМИ ФИНАНСАМИ');
     }
 }
