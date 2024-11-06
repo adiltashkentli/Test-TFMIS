@@ -12,6 +12,8 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
   testDir: './tests',
+  timeout: 60000,
+  //testTimeout: 60000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -24,11 +26,15 @@ module.exports = defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    waitUntil: 'domcontentloaded',
+    actionTimeout: 60000,  // Timeout for any action like click, type, goto, etc.
+    navigationTimeout: 60000,  // Timeout for page.goto specifically
+    waitForTimeout: 60000, 
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://tfmis.vercel.app/',
+
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    waitUntil: 'domcontentloaded',
   },
 
   /* Configure projects for major browsers */
