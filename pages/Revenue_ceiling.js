@@ -8,62 +8,60 @@ class Revenue_Celling {
 
     }
 
-    async login() {
+    async navigateToPage() {
         await this.page.goto('/');
-        await this.page.fill(Locators.Dashboard.login, dataUser.loginData.user);
-        await this.page.fill(Locators.Dashboard.password, dataUser.loginData.password);
-        await this.page.click(Locators.Dashboard.loginButton);
+        await this.page.click(Locators.Revenue_ceiling.budPrepMenuBut);
+        await this.page.click(Locators.Revenue_ceiling.revenueButton);
+        await this.page.click(Locators.Revenue_ceiling.revCeilBut);
     }
 
-    async checkHeadings() {
-        // Fetch all heading elements
-        const headings = await this.page.$$(Locators.Dashboard.headings);
-
-        const expectedHeadings = [
-            'Главная',
-            'Карта сайта',
-            'Форум',
-            'НПД',
-            'Помощь',
-        ];
-
-        // Loop through each heading and compare text
-        for (let i = 0; i < headings.length; i++) {
-            const headingText = await headings[i].textContent();
-            console.log(headingText);
-
-            // Assert that the heading text matches the expected value
-            expect(headingText.trim()).toBe(expectedHeadings[i]);
-        }
+    async checkTabHeader() {
+        const tabHeader = await this.page.locator(Locators.Revenue_ceiling.categoryTabName);
+        await expect(tabHeader).toHaveText('Потолки доходов');
+    }
+    async lockButton(){
+        await this.page.locator(Locators.Revenue_ceiling.lockButton).toBeVisible();
+    }    
+    async selectElementsToList() {
+        await this.page.click(Locators.Revenue_ceiling.selectAge);
+        await this.page.click(Locators.Revenue_ceiling.firstElementToSelect);
+        await this.page.click(Locators.Revenue_ceiling.selectScenario);
+        await this.page.click(Locators.Revenue_ceiling.secondElementScenario);
+        await this.page.ckick(Locators.Revenue_ceiling.listButton);
     }
 
-    async languageSelection() {
-        const languageButton = this.page.locator(Locators.Dashboard.langSlcBtn);
-        // Ensure the language selection button is enabled
-        await expect(languageButton).toBeEnabled();
-    }
-
-    async listOfBudgetPreparation() {
-        // Get all submenu items
-        const submenus = await this.page.$$(Locators.Dashboard.budgPrpMenusList);
+    async listSpreadsheet() {
+        // Get all headers of spreadsheet
+        const tabHeadings = await this.page.$$(Locators.Revenue_ceiling.colunmHeadersContainer);
         
         const expectedTexts = [
-            'Доходы',
-            'Расходы',
+            'Код дохода',
+            'Наименование дохода',
+            '2022 Проект',
+            '2023 Проект',
+            '2023 Проект 6 месяцев',
+            '2023 Проект 12 месяцев исп-е',
+            '2024 Проект ',
             'Изменение',
-            'Администрирование',
-            'Классификаторы',
         ];
 
-        // Loop through each submenu item and assert its text
-        for (let i = 0; i < submenus.length; i++) {
-            const menuText = await submenus[i].textContent();
-            console.log(menuText);
+        for (let i = 0; i < tabHeadings.length; i++) {
+            const headersText = await tabHeadings[i].textContent();
+            console.log(headersText);
 
             // Assert that the menu text matches the expected value
-            expect(menuText.trim()).toBe(expectedTexts[i]);
+            expect(headersText.trim()).toBe(expectedTexts[i]);
         }
     }
+    async reportButtonAssertion(){
+        await this.page.locator(Locators.Revenue_ceiling.reportButton).toBeTruthy();
+    }
+    async saveButtonAssertion(){
+        await this.page.locator(Locators.Revenue_ceiling.saveButton).toBeVisible();
+    }
+    async pagination(){
+        await this.page.click(Locators.Revenue_ceiling.paginationButton);
+        await this.page.click(Locators.Revenue_ceiling.thirdElement);
+    }
 }
-
 module.exports = Revenue_Celling;
