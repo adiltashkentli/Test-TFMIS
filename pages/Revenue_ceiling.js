@@ -8,11 +8,13 @@ class Revenue_Celling {
 
     }
 
-    async navigateToPage() {
-        await this.page.goto('/');
-        await this.page.click(Locators.Revenue_ceiling.budPrepMenuBut);
-        await this.page.click(Locators.Revenue_ceiling.revenueButton);
-        await this.page.click(Locators.Revenue_ceiling.revCeilBut);
+    async navigateToPage() {        
+        await this.page.getByText('Подготовка бюджета').click();        
+        await expect (this.page.getByText('Доходы')).toBeVisible();
+        await this.page.getByText('Доходы').click();        
+        await this.page.waitForTimeout(5000);
+        await expect (this.page.getByText('Потолки доходов')).toBeVisible();                
+        await this.page.getByText('Потолки доходов').click();
     }
 
     async checkTabHeader() {
@@ -20,14 +22,13 @@ class Revenue_Celling {
         await expect(tabHeader).toHaveText('Потолки доходов');
     }
     async lockButton(){
-        await this.page.locator(Locators.Revenue_ceiling.lockButton).toBeVisible();
+        await expect (this.page.locator(Locators.Revenue_ceiling.lockButton)).toBeVisible();
     }    
     async selectElementsToList() {
         await this.page.click(Locators.Revenue_ceiling.selectAge);
-        await this.page.click(Locators.Revenue_ceiling.firstElementToSelect);
-        await this.page.click(Locators.Revenue_ceiling.selectScenario);
-        await this.page.click(Locators.Revenue_ceiling.secondElementScenario);
-        await this.page.ckick(Locators.Revenue_ceiling.listButton);
+        await this.page.getByRole('option', { name: 'Ten' }).click();
+        await this.page.getByLabel('Ten').nth(1).click();
+        await this.page.getByRole('option', { name: 'Twenty' }).click();
     }
 
     async listSpreadsheet() {
@@ -54,14 +55,14 @@ class Revenue_Celling {
         }
     }
     async reportButtonAssertion(){
-        await this.page.locator(Locators.Revenue_ceiling.reportButton).toBeTruthy();
+        await expect (this.page.locator(Locators.Revenue_ceiling.reportButton)).toBeTruthy();
     }
     async saveButtonAssertion(){
-        await this.page.locator(Locators.Revenue_ceiling.saveButton).toBeVisible();
+        await this.page.locator(Locators.Revenue_ceiling.saveButton).toBeTruthy();
     }
     async pagination(){
         await this.page.click(Locators.Revenue_ceiling.paginationButton);
-        await this.page.click(Locators.Revenue_ceiling.thirdElement);
+        await this.page.getByText('30').click();
     }
 }
 module.exports = Revenue_Celling;
