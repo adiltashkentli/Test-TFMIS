@@ -1,6 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const RevenueCeiling = require('../../pages/Revenue_ceiling');
+const RevenueCeiling = require('../../pages/Income_ceiling');
 const Dashboard = require('../../pages/Dashboard');
 
 test.describe('Тест: Меню доходы', () => {
