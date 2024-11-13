@@ -71,6 +71,11 @@ class IncomeByRegions {
     async saveButtonAssertion() {
         await expect(this.page.locator(Locators.IncomeCeiling.saveButton)).toBeVisible();
     }
-    
+    async reportButtonAssertion(){
+        await expect (this.page.locator(Locators.IncomeCeiling.reportButton)).toBeVisible();
+    }
+    async saveButtonAssertion(){
+        await expect(this.page.locator(Locators.IncomeCeiling.saveButton)).toBeVisible();
+    }
 }
 module.exports = IncomeByRegions;
