@@ -18,14 +18,14 @@ class Revenue_Celling {
     }
 
     async checkTabHeader() {
-        const tabHeader = await this.page.locator(Locators.Revenue_ceiling.categoryTabName);
+        const tabHeader = await this.page.locator(Locators.IncomeCeiling.categoryTabName);
         await expect(tabHeader).toHaveText('Потолки доходов');
     }
     async lockButton(){
-        await expect (this.page.locator(Locators.Revenue_ceiling.lockButton)).toBeVisible();
+        await expect (this.page.locator(Locators.IncomeCeiling.lockButton)).toBeVisible();
     }    
     async selectElementsToList() {
-        await this.page.click(Locators.Revenue_ceiling.selectAge);
+        await this.page.click(Locators.IncomeCeiling.selectAge);
         await this.page.getByRole('option', { name: 'Ten' }).click();
         await this.page.getByLabel('Ten').nth(1).click();
         await this.page.getByRole('option', { name: 'Twenty' }).click();
@@ -33,7 +33,7 @@ class Revenue_Celling {
 
     async listSpreadsheet() {
         // Get all headers of spreadsheet
-        const tabHeadings = await this.page.$$(Locators.Revenue_ceiling.colunmHeadersContainer);
+        const tabHeadings = await this.page.$$(Locators.IncomeCeiling.colunmHeadersContainer);
         
         const expectedTexts = [
             'Код дохода',
@@ -55,14 +55,14 @@ class Revenue_Celling {
         }
     }
     async reportButtonAssertion(){
-        await expect (this.page.locator(Locators.Revenue_ceiling.reportButton)).toBeVisible();
+        await expect (this.page.locator(Locators.IncomeCeiling.reportButton)).toBeVisible();
     }
     async saveButtonAssertion(){
-        await expect(this.page.locator(Locators.Revenue_ceiling.saveButton)).toBeVisible();
+        await expect(this.page.locator(Locators.IncomeCeiling.saveButton)).toBeVisible();
     }
     async pagination(){
-        await this.page.click(Locators.Revenue_ceiling.paginationButton);
-        await this.page.click(Locators.Revenue_ceiling.secondElement);
+        await this.page.click(Locators.IncomeCeiling.paginationButton);
+        await this.page.click(Locators.IncomeCeiling.secondElement);
     }
 }
 module.exports = Revenue_Celling;
