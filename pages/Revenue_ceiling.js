@@ -55,14 +55,14 @@ class Revenue_Celling {
         }
     }
     async reportButtonAssertion(){
-        await expect (this.page.locator(Locators.Revenue_ceiling.reportButton)).toBeTruthy();
+        await expect (this.page.locator(Locators.Revenue_ceiling.reportButton)).toBeVisible();
     }
     async saveButtonAssertion(){
-        await this.page.locator(Locators.Revenue_ceiling.saveButton).toBeTruthy();
+        await expect(this.page.locator(Locators.Revenue_ceiling.saveButton)).toBeVisible();
     }
     async pagination(){
         await this.page.click(Locators.Revenue_ceiling.paginationButton);
-        await this.page.getByText('30').click();
+        await this.page.click(Locators.Revenue_ceiling.secondElement);
     }
 }
 module.exports = Revenue_Celling;
