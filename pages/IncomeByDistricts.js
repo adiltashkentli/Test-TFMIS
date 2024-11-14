@@ -2,41 +2,43 @@ const { expect } = require('@playwright/test');
 const Locators = require('../support/locators');
 const dataUser = require('../data/dataUser');
 
-class IncomeByRegions {
+class IncomeByDistricts {
     constructor(page) {
         this.page = page;
-
     }
 
     async navigateToPage() {
-        await this.page.getByText('Подготовка бюджета').click();
-        await expect(this.page.getByText('Доходы')).toBeVisible();
-        await this.page.getByText('Доходы').click();
-        await this.page.getByText('Доходы по областям').click();
+        await this.page.click(Locators.IncomeCeiling.budPrepMenuBut);
+        await this.page.click(Locators.IncomeCeiling.menuRevenue);
+        await this.page.click(Locators.IncomeByDistricts.menuDistrictRevenue);
+
     }
 
     async checkTabHeader() {
-        const tabHeader = await this.page.locator(Locators.IncomeByRegions.tabHeader);
-        await expect(tabHeader).toHaveText('Доходы по областям');
+        const tabHeader = await this.page.locator(Locators.IncomeByDistricts.tabHeading);
+        await expect(tabHeader).toContainText('Доходы по районам');
     }
+
     async lockButton() {
         await expect(this.page.locator(Locators.IncomeCeiling.lockButton)).toBeVisible();
     }
     async selectElementsToList() {
-        await this.page.getByLabel('Год').first().click();
+        await this.page.click(Locators.IncomeByDistricts.selectAge);
         await this.page.getByRole('option', { name: 'Ten' }).click();
         await this.page.getByLabel('Год').nth(1).click();
         await this.page.getByRole('option', { name: 'Twenty' }).click();
         await this.page.getByLabel('Год').nth(2).click();
         await this.page.getByRole('option', { name: 'Thirty' }).click();
         await this.page.getByLabel('Год').nth(3).click();
-        await this.page.getByRole('option', { name: 'Twenty' }).click();
-        await this.page.click(Locators.IncomeByRegions.listButton);
+        await this.page.getByRole('option', { name: 'Ten' }).click();
+        await this.page.getByLabel('Год').nth(4).click();
+        await this.page.getByRole('option', { name: 'Twenty' }).click();        
+        await this.page.click(Locators.IncomeByDistricts.listButton);
         
     }
-    
+
     async pagination() {
-        await this.page.getByLabel(Locators.IncomeByRegions.pagination).click();        
+        await this.page.getByLabel(Locators.IncomeByRegions.pagination).click();
         await this.page.getByRole('option', { name: '30' }).click();
     }
     async listOfSpreadsheet() {
@@ -46,8 +48,8 @@ class IncomeByRegions {
         const expectedTexts = [
             'Revenue code',
             'Revenue name',
-            'Ceiling',
-            'Distributed ',
+            'Region',
+            "Districts's total",
             'Balance',
             '2022 Project',
             '2023 Project',
@@ -71,7 +73,6 @@ class IncomeByRegions {
     async saveButtonAssertion() {
         await expect(this.page.locator(Locators.IncomeCeiling.saveButton)).toBeVisible();
     }
-   
+    
 }
-
-module.exports = IncomeByRegions;
+module.exports = IncomeByDistricts;

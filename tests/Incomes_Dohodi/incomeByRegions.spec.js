@@ -31,5 +31,11 @@ test.describe('Доходы по областям', () => {
   test ('List of spreadsheet', async()=>{
     await income_Regions.listOfSpreadsheet();    
   })
+  test ('Check report button', async()=>{
+    await income_Regions.reportButtonAssertion();
+  });
+  test ('Check save button', async()=>{
+    await income_Regions.saveButtonAssertion();
+  });
 });
 
