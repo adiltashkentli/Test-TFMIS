@@ -40,8 +40,18 @@ IncomeByDistricts: {
     tabHeading: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
     selectAge: '(//div[@id="demo-simple-select"])[1]',
     listButton: 'div[class="IncomeRegion_SelectRegion__DQsPf"] p',
-
 },
+IncomeAdmins: {
+    menuIncomeAdmins: 'Доходы по администраторам',
+    tabHeader: '//div[@class="sc-blHHSb jSSlEL"]',
+    finsourceSelect: 'Источник финансирования',
+    firstItem: '//li[normalize-space()="Ten"]',
+    ageSelect: "//div[@id=':rc7:']",
+    tableheaders: '//*[@id="root"]/div[2]/div/div/div[3]/div[2]/div/div/div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    totalToDistrictInput1: '//*[@id="outlined-basic"]',
+    totalToDistrictInput2: '//div[@class="IncomAdmin_income__FVOhE"]//div[2]//div[1]//input[1]',
+    totalToDistrictInput3: '//div[@class="IncomAdmin_tableContent__I3ZTO"]//div[3]//div[1]//input[1]',
+}
 
 }
 module.exports = Locators;
