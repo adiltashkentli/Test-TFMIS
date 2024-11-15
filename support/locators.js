@@ -51,7 +51,26 @@ IncomeAdmins: {
     totalToDistrictInput1: '//*[@id="outlined-basic"]',
     totalToDistrictInput2: '//div[@class="IncomAdmin_income__FVOhE"]//div[2]//div[1]//input[1]',
     totalToDistrictInput3: '//div[@class="IncomAdmin_tableContent__I3ZTO"]//div[3]//div[1]//input[1]',
-}
+},
+IncomeApplication:{
+    menuIncomeApplication: '//p[@title="income_application"]',
+    tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]/div/div/div',
+    
+},
+
+
+
+
+
+Classifiers: {
+    menuClassifiers: '//span[contains(text(),"Классификаторы")]',
+    categoriesOfSubmenu: '//*[@id="rc-menu-uuid-64379-1-25-popup"]//li',
+},
+DepartmentalClassification:{
+    menuDepartmentalClassification: '//*[@id="rc-menu-uuid-64379-1-25-popup"]/li[1]',
+    tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+},
 
 }
 module.exports = Locators;
