@@ -56,9 +56,21 @@ IncomeApplication:{
     menuIncomeApplication: '//p[@title="income_application"]',
     tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
     spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]/div/div/div',
-    
+    },
+IncomeApplicationRegistry: {
+    menuIncomeApplicationRegistry: '//p[@title="income_application_registry"]',
+    tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]/div/div/div',
+    allowSignButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]//div[1]/div[1]/p',
+    approveButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]//div[2]/div[1]/p',
+    endorseButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]//div[3]/div[1]/p',
+    agreedButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]//div[4]/div[1]/p',
+    refuseToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[1]',
+    denyToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[2]',
+    refuseToReconcileButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[3]',
+    checkAllBoxesRadioButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span',
+    checkOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span',
 },
-
 
 
 
