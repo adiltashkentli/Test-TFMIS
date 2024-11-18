@@ -64,19 +64,22 @@ class IncomeApplicationRegistry {
         //check and assert
         const checkAllBoxes = this.page.locator(Locators.IncomeApplicationRegistry.checkAllBoxesRadioButton);
         await checkAllBoxes.click();
-        await expect(checkAllBoxes).toHaveAttribute('aria-checked', 'true');
+        const assertion = this.page.locator(Locators.IncomeApplicationRegistry.assertionCheckedBoxes);
+        await expect(assertion).toBeChecked();
+        await this.page.waitForTimeout(3000);
         //uncheck and assert
-        const uncheckAllBox =  this.page.locator(Locators.IncomeApplicationRegistry.checkAllBoxesRadioButton);
+        const uncheckAllBox =  this.page.locator(Locators.IncomeApplicationRegistry.assertionCheckedBoxes);
         await uncheckAllBox.click();
         await expect(uncheckAllBox).not.toBeChecked();
     }
     async checkOneLineBox(){
         const checkOneBox = this.page.locator(Locators.IncomeApplicationRegistry.checkOneBox);
         await checkOneBox.click();
-        await expect(checkOneBox).toHaveAttribute('aria-checked', 'true');
+        const assertion1 = this.page.locator(Locators.IncomeApplicationRegistry.assertionOneBox);
+        await expect(assertion1).toBeChecked();        
         const uncheckOneBox = this.page.locator(Locators.IncomeApplicationRegistry.checkOneBox);
         await uncheckOneBox.click();
-        await expect(uncheckOneBox).not.toBeChecked();
+        await expect(assertion1).not.toBeChecked();
     }
     async allowSignButtonAssertion() {
         await expect(this.page.locator(Locators.IncomeApplicationRegistry.allowSignButton)).toBeVisible();
