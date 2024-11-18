@@ -69,11 +69,46 @@ IncomeApplicationRegistry: {
     denyToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[2]',
     refuseToReconcileButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[3]',
     checkAllBoxesRadioButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span',
-    checkOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span',    
+Budget_Preparation
+    checkOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span',
     assertionCheckedBoxes: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span/input',
     assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',
 },
-
+Outcomes: {
+    budgetPreparationMenu: 'li:nth-child(2) div:nth-child(1) span:nth-child(2)',
+    menuOutcomes: '//span[contains(text(),"Расходы")]',
+    submenuList: '//*[@id="rc-menu-uuid-69063-1-22-popup"]/li',
+},
+GeneralBudgetCeilings: {
+    categoryMenu: '//p[@title="general_budget_ceilings"]',
+    tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+    selectYear: '//*[@id="select-year"]',
+    selectRelativeYear: '//li[normalize-space()="2024"]',
+    selectScenario: '//div[@id=":rr:"]',
+    selctRelativeCategory: '//li[contains(text(),"Вариант МФ РТ")]',
+    listButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div[3]/div[1]',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
+},
+CeilingsBySector: {
+    budgetPreparationMenu: '(//div/span[contains(text(),"Подготовка бюджета")])[1]',
+    categoryMenu: '//p[@title="budget_ceilings_by_sector"]',
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]//div/p',
+    selectYear: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div[1]/div/div',
+    selectFirstYear: '//div/ul/li[normalize-space()="Ten"]',
+    selectLabel: '(//div[@id="demo-simple-select"])[2]',
+    selectSecondLabel: '//div/ul/li[normalize-space()="Twenty"]',
+    selectParameter: '(//div[@id="demo-simple-select"])[3]',
+    selectThirdParameter: '//div/ul/li[normalize-space()="Thirty"]',
+    listButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div[1]',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    changesLogButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[1]/div[2]/div[1]/div[1]/p',
+    reportButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div/div[1]/div[1]/div[2]/div[2]/div[1]/p',
+    saveButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[1]/div[2]/div[3]/div[1]',
+    checkOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span',    
+    assertionCheckedBoxes: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span/input',
+    assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',
+  
+},
 
 
 
