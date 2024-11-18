@@ -78,6 +78,16 @@ Outcomes: {
     menuOutcomes: '//span[contains(text(),"Расходы")]',
     submenuList: '//*[@id="rc-menu-uuid-69063-1-22-popup"]/li',
 },
+GeneralBudgetCeilings: {
+    categoryMenu: '//p[@title="general_budget_ceilings"]',
+    tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+    selectYear: '//*[@id="select-year"]',
+    selectRelativeYear: '//li[normalize-space()="2024"]',
+    selectScenario: '//div[@id=":rr:"]',
+    selctRelativeCategory: '//li[contains(text(),"Вариант МФ РТ")]',
+    listButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div[3]/div[1]',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
+},
 
 
 
