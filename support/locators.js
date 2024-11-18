@@ -70,6 +70,13 @@ IncomeApplicationRegistry: {
     refuseToReconcileButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[3]',
     checkAllBoxesRadioButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span',
     checkOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span',
+    assertionCheckedBoxes: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span/input',
+    assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',
+},
+Outcomes: {
+    budgetPreparationMenu: '//*[@id="root"]/div[2]//div[1]//div/ul/li[2]/div',
+    menuOutcomes: '//span[contains(text(),"Расходы")]',
+    submenuList: '//*[@id="rc-menu-uuid-69063-1-22-popup"]/li',
 },
 
 
