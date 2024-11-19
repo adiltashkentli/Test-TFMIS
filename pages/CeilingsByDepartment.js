@@ -1,5 +1,5 @@
 const { expect } = require('@playwright/test');
-const Locators = require('../support/locators');
+const Locators = require('../support/locators')
 const dataUser = require('../data/dataUser');
 
 class CeilingsByDepartment {
@@ -7,9 +7,14 @@ class CeilingsByDepartment {
         this.page = page;
     }
     async navigateToPage() {
-        await this.page.click(Locators.CeilingsBySector.budgetPreparationMenu);
-        await this.page.click(Locators.Outcomes.menuOutcomes);
-        await this.page.click(Locators.CeilingsByDepartment.categoryMenu);
+        const navigationToPage = [
+            'Подготовка бюджета',
+            'Расходы',
+            'Потолки по ГРБС'
+        ];
+        for(const step of navigationToPage){
+            await this.page.getByText(step, { exact: true }).click();
+        }
     }
 
     async checkTabHeader() {

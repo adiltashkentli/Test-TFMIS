@@ -69,6 +69,7 @@ IncomeApplicationRegistry: {
     denyToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[2]',
     refuseToReconcileButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[3]',
     checkAllBoxesRadioButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span',
+},
 Budget_Preparation: {
     checkOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span',
     assertionCheckedBoxes: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span/input',
@@ -76,7 +77,7 @@ Budget_Preparation: {
 },
 Outcomes: {
     budgetPreparationMenu: 'li:nth-child(2) div:nth-child(1) span:nth-child(2)',
-    menuOutcomes: '//span[contains(text(),"Расходы")]',
+    menuOutcomes:  '//span[contains(text(),"Расходы")]',
     submenuList: '//*[@id="rc-menu-uuid-69063-1-22-popup"]/li',
 },
 GeneralBudgetCeilings: {
@@ -90,7 +91,7 @@ GeneralBudgetCeilings: {
     spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
 },
 CeilingsBySector: {
-    budgetPreparationMenu: '(//div/span[contains(text(),"Подготовка бюджета")])[1]',
+    budgetPreparationMenu: '//*[@id="root"]/div[2]//div[1]//div/ul/li[2]',
     categoryMenu: '//p[@title="budget_ceilings_by_sector"]',
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]//div/p',
     selectYear: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div[1]/div/div',
@@ -109,6 +110,7 @@ CeilingsBySector: {
     assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',  
 },
 CeilingsByDepartment:{
+    budPrepMenu: 'Подготовка бюджета',
     categoryMenu: '(//p[@title="budget_ceilings_by_department"])[1]',
     tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]//div/p',
     reportSelector: '//*[@id="outlined-basic"]',
@@ -129,6 +131,6 @@ DepartmentalClassification:{
     menuDepartmentalClassification: '//*[@id="rc-menu-uuid-64379-1-25-popup"]/li[1]',
     tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
 },
-
 }
+
 module.exports = Locators;
