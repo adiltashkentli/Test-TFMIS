@@ -34,5 +34,8 @@ test.describe('Категория: Потолки по "РБС"', () => {
   });  
   test ('Check save button', async()=>{
     await ceilingsByDistributors.saveButtonAssertion();
+  });
+  test ('Get list of spreadsheet headings', async()=>{
+    await ceilingsByDistributors.listOfSpreadsheet();
   })
 })

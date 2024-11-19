@@ -123,7 +123,25 @@ CeilingsByDistributors: {
     categoryMenu: '(//p[@title="budget_ceilings_by_distributors"])[1]',
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
     saveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div/div[2]/div[2]/div[1]/p',
+    spreadsheetHeaders: '//*[@id="root"]//div/div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div',
 },
+CeilingsByOrganizations: {
+    categoryMenu: "//p[@title='budget_ceilings_by_organizations']",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div/div[3]/div[2]//div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    lockButton: '//*[@id="root"]//div[3]/div[2]//div[1]/div[1]/div[1]/img'
+},
+
+
+
+
+
+
+
+
+
+
+
 
 
 Classifiers: {

@@ -44,17 +44,19 @@ class CeilingsByDistributors {
         }            
     async listOfSpreadsheet() {
         // Get all headers of spreadsheet
-        const tableHeadings = await this.page.$$(Locators.CeilingsBySector.spreadsheetHeaders);
+        const tableHeadings = await this.page.$$(Locators.CeilingsByDistributors.spreadsheetHeaders);
 
         const expectedTexts = [
-            'Код',
-            'Сектор',
-            '2023',
-            '2024',
+            'Наименование распределителя бюджетных средств',
+            'Сумма',
+            'Сумма',            
             'Изменение',
-            '2025',
-            '2026',
-            'Пояснение',
+            'Сумма',
+            'Сумма',
+            'Сумма',
+            'Сумма',
+            'Сумма',
+            'Сумма'
         ];
         for (let i = 0; i < tableHeadings.length; i++) {
             const headersText = await tableHeadings[i].textContent();
