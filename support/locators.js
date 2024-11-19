@@ -109,8 +109,7 @@ CeilingsBySector: {
     assertionCheckedBoxes: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span/input',
     assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',  
 },
-CeilingsByDepartment:{
-    budPrepMenu: 'Подготовка бюджета',
+CeilingsByDepartment:{    
     categoryMenu: '(//p[@title="budget_ceilings_by_department"])[1]',
     tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]//div/p',
     reportSelector: '//*[@id="outlined-basic"]',
@@ -120,7 +119,11 @@ CeilingsByDepartment:{
     spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[4]/div[1]/div[1]/div[2]/div[1]/div/div/div',
     saveButton: '//div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/p[1]',
 },
-
+CeilingsByDistributors: {
+    categoryMenu: '(//p[@title="budget_ceilings_by_distributors"])[1]',
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    saveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div/div[2]/div[2]/div[1]/p',
+},
 
 
 Classifiers: {
