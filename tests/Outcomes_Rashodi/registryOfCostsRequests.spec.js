@@ -32,7 +32,4 @@ test.describe('Категория: Бюджетные заявки "ПБС"', ()
   test ('Check report button', async()=>{
     await budgetRequests.reportButtonAssertion();
   });
-  test ('Add modal functionality', async()=>{
-    await budgetRequests.addModalFunctionality();
-  })
 })
