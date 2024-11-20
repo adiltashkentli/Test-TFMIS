@@ -136,8 +136,14 @@ BudgetRequests: {
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
     spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
     reportButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[1]/div[1]/p',
+    addButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div/div[1]/p',
+    addModalHeader: "//div[contains(text(),'Добавление бюджетной заявки')]",
+    saveButton: '//div[2]//div[2]//div[2]//div[2]/div/form/div[6]/button[2]/span',
 },
-
+RegistryOfCostsRequests:{
+    categoryMenu: '//*[@id="rc-menu-uuid-32915-1-22-popup"]/li[7]/span/p',
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+},
 
 
 
