@@ -145,7 +145,22 @@ RegistryOfCostsRequests:{
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
     listButton: "(//p[contains(text(),'Список')])[1]",
     spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
+    
 },
+SalaryLimitApp: {
+    categoryMenu: "//p[@title='salary_limit_application']",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    addButton: "(//p[contains(text(),'Добавить')])[1]",
+    modalHeader: "(//div[contains(text(),'Заявка на выделение лимита по заработной плате')])[1]",
+    closeModal: "(//*[name()='svg'][@fill-rule='evenodd'])[1]",
+    modal1stTabHeader: '//div[2]//div[2]//div[2]//div[2]/div[3]/p',
+    modal1sheetHeaders: '//div[2]//div[2]//div[2]//div[2]/div[4]/div/div[1]/div[2]/div[1]/div/div/div',
+    modal2ndTabHeader: '//div[2]//div[2]//div[2]//div[2]/div[5]/p',
+    modal2sheetHeaders: '//div[2]//div[2]//div[2]//div[2]/div[6]/div/div[1]/div[2]/div[1]/div/div/div',
+    modal3thTabHeader: '//div[2]//div[2]//div[2]//div[2]/div[7]/p',
+    modal3sheetHeaders: '//div[2]//div[2]//div[2]//div[2]/div[8]/div/div[1]/div[2]/div[1]/div/div/div',
+},
+
 
 
 
