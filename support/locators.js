@@ -141,8 +141,10 @@ BudgetRequests: {
     saveButton: '//div[2]//div[2]//div[2]//div[2]/div/form/div[6]/button[2]/span',
 },
 RegistryOfCostsRequests:{
-    categoryMenu: '//*[@id="rc-menu-uuid-32915-1-22-popup"]/li[7]/span/p',
+    categoryMenu: "//p[@title='restore_income_registry']",
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    listButton: "(//p[contains(text(),'Список')])[1]",
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
 },
 
 
