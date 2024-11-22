@@ -76,7 +76,7 @@ Budget_Preparation: {
     assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',
 },
 Outcomes: {
-    budgetPreparationMenu: 'li:nth-child(2) div:nth-child(1) span:nth-child(2)',
+    budgetPreparationMenu: "(//span[contains(text(),'Подготовка бюджета')])[1]",
     menuOutcomes:  '//span[contains(text(),"Расходы")]',
     submenuList: '//*[@id="rc-menu-uuid-69063-1-22-popup"]/li',
 },
@@ -185,12 +185,15 @@ ChangesExpenditureBudgWithtObj: {
     resultsButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[3]/div[1]/p',
     footer5InputAreas: '//*[@id="root"]/div[2]/div/div/div[3]/div[2]/div/div/div[5]/div[2]/div',
 },
-
-
-
-
-
-
+ChangesExpBudgetWithObject:{
+    categoryMenu: "(//p[@title='changes_expenditure_budget_with_object'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    addLine: "(//p[contains(text(),'Добавить строку')])[1]",
+    modalHeader: "(//p[contains(text(),'Выберите бюджетную заявку и объект')])[1]",
+    modal1sheetHeaders: '//div[2]/div/table/thead/tr/th',
+    modal2sheetHeaders: '//div[2]/div[5]/div/table/thead/tr/th',
+    modal3sheetHeaders: '//div[2]/div[7]/div/table/thead/tr/th'
+},
 
 
 
