@@ -160,7 +160,31 @@ SalaryLimitApp: {
     modal3thTabHeader: '//div[2]//div[2]//div[2]//div[2]/div[7]/p',
     modal3sheetHeaders: '//div[2]//div[2]//div[2]//div[2]/div[8]/div/div[1]/div[2]/div[1]/div/div/div',
 },
-
+ChangesMenu: {
+    submenuChanges: "(//span[contains(text(),'Изменение')])[1]",
+    categoriesOfSubmenu: '//*[@id="rc-menu-uuid-20641-1-23-popup"]/li',
+},
+ChangesExpenditureBudgWithtObj: {
+    categoryMenu: "(//p[@title='changes_expenditure_budget_without_object'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[5]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    newButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]//div[1]/div[1]/p',
+    addLinebutton: "(//p[contains(text(),'Добавить строку')])[1]",
+    modalHeader: "(//p[contains(text(),'Выберите доходную заявку')])[1]",
+    resultListInSpradsheet: '//div[3]//div[2]/div/table/thead/tr/th',    
+    firstLineData: '//div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td',
+    changesLogButton: '//*[@id="root"]//div[2]/div/div[2]/div[1]/p',
+    changesModalHeader: "(//p[contains(text(),'История изменений')])[2]",
+    changesLogModalSpshHeaders: '//div[2]/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/div/div/div',
+    reportButton:         '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div[1]/p',
+    readyToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[3]/div[1]/p',
+    canselReadeToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/button',
+    reconcileButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[4]/div[1]/p',
+    removeDocButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[5]/div[1]/p',
+    saveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[6]/div[1]/p',
+    resultsButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[3]/div[1]/p',
+    footer5InputAreas: '//*[@id="root"]/div[2]/div/div/div[3]/div[2]/div/div/div[5]/div[2]/div',
+},
 
 
 
