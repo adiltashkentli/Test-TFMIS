@@ -194,6 +194,13 @@ ChangesExpBudgetWithObject:{
     modal2sheetHeaders: '//div[2]/div[5]/div/table/thead/tr/th',
     modal3sheetHeaders: '//div[2]/div[7]/div/table/thead/tr/th'
 },
+ChangesOfIncome: {
+    categoryMenu: "(//p[@title='changes_of_revenue_budget'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    modalHeader: "(//p[contains(text(),'Выберите доходную заявку')])[1]",
+    pagination: '100',
+    listOfSpreadsheet: '//*[@id="root"]/div[2]//div[3]/div[2]//div[5]/div/div[1]/div[2]/div[1]/div/div/div',
+},
 
 
 
