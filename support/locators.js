@@ -232,8 +232,11 @@ FunctionalClassification: {
 },
 FinancialSourses: {
     categoryMenu: "(//p[@title='fin_source'])[1]",
-    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
-    
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',    
+},
+EconomicalClassification: {
+    categoryMenu: "(//p[@title='cls_economical'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',    
 },
 
 }
