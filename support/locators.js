@@ -226,6 +226,15 @@ DepartmentalClassification:{
     nameArea: "(//input[@id='outlined-basic'])[2]",
     header6Buttons: '//*[@id="root"]//div[2]/div/div/div/div[3]/div/div[1]/div/div',
 },
+FunctionalClassification: {
+    categoryMenu: "(//p[@title='cls_functional'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',    
+},
+FinancialSourses: {
+    categoryMenu: "(//p[@title='fin_source'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    
+},
 
 }
 
