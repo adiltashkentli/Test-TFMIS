@@ -214,18 +214,19 @@ BudgetRequestTypes: {
     secondLineData: '//*[@id="root"]//div[2]//div[3]/div/div[1]/div[2]/div[2]/div/div[2]/div',
     addButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div/div[1]/p',
 },
-
-
-
-
 Classifiers: {
     menuClassifiers: '//span[contains(text(),"Классификаторы")]',
     categoriesOfSubmenu: '//*[@id="rc-menu-uuid-64379-1-25-popup"]//li',
 },
 DepartmentalClassification:{
-    menuDepartmentalClassification: '//*[@id="rc-menu-uuid-64379-1-25-popup"]/li[1]',
+    categoryMenu: "(//p[@title='cls_departmental'])[1]",
     tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+    categoryHeader: '//*[@id="root"]//div[2]/div/div/div/div[1]//div/div[1]/div[1]/p',
+    codeArea: "(//input[@id='outlined-basic'])[1]",
+    nameArea: "(//input[@id='outlined-basic'])[2]",
+    header6Buttons: '//*[@id="root"]//div[2]/div/div/div/div[3]/div/div[1]/div/div',
 },
+
 }
 
 module.exports = Locators;
