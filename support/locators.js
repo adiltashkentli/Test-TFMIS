@@ -201,7 +201,19 @@ ChangesOfIncome: {
     pagination: '100',
     listOfSpreadsheet: '//*[@id="root"]/div[2]//div[3]/div[2]//div[5]/div/div[1]/div[2]/div[1]/div/div/div',
 },
-
+Administration: {
+    submenuAdministration: "(//span[contains(text(),'Администрирование')])[1]",
+    categoriesOfSubmenu: '//*[@id="rc-menu-uuid-21333-1-24-popup"]/li',
+    categoryAdditObjOfBSlevel: "(//p[@title='additional_objects_of_bz_level'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+},
+BudgetRequestTypes: {
+    categoryMenu: "(//p[@title='admin_budget_request_types'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
+    secondLineData: '//*[@id="root"]//div[2]//div[3]/div/div[1]/div[2]/div[2]/div/div[2]/div',
+    addButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div/div[1]/p',
+},
 
 
 
