@@ -1,22 +1,34 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const BudExeIncomesMenu = require ('../../../pages/BudExIncomesMenu');
+const IncomeTransfersReg = require ('../../../pages/BudExeIncomeTransfersReg');
 const Dashboard = require('../../../pages/Dashboard');
 const { assert } = require('console');
 
-test.describe('Подменю: Доходы', () => {
-  let budExeIncomesMenu;
+test.describe('Категория: Реестр поступления (перевод со счёта)', () => {
+  let incomeTransfersReg;
   let dashboard;
     
   test.beforeEach(async ({page}) => {
-    budExeIncomesMenu = new BudExeIncomesMenu(page);
+    incomeTransfersReg = new IncomeTransfersReg(page);
     dashboard = new Dashboard(page);    
     await dashboard.login();
-    await budExeIncomesMenu.navigateToPage();
+    await incomeTransfersReg.navigateToPage();
   });
-  test ('Check submenu list', async()=>{
-    await budExeIncomesMenu.checkCategoriesList();
+  test ('Check tab header', async()=>{
+    await incomeTransfersReg.checkTabHeader();
   });
-  
+  test ('Select relative data to list', async()=>{
+    await incomeTransfersReg.selectElementsToList();
+  });
+  test ('Check spreadsheet list', async()=>{
+    await incomeTransfersReg.checkSpreadsheetHeaders();
+  });
+  test ('Increade pagination', async()=>{
+    await incomeTransfersReg.pagination();
+  });
+  test ('Asserrt Form PP button', async()=>{
+    await incomeTransfersReg.formPPButtonAssertion();
+  });
+
     
 })
