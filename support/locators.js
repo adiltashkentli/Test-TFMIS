@@ -239,8 +239,10 @@ EconomicalClassification: {
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',    
 },
 IncomeClassification: {
-    categoryMenu: "(//p[@title='cls_of_incomes'])[1]",
-    
+    categoryMenu: "(//p[@title='cls_of_incomes'])[1]",    
+},
+ProgrammsSubprogramms: {
+    categoryMenu: "(//p[@title='cls_programs'])[1]",
 },
 
 }
