@@ -276,6 +276,11 @@ IncomeTransfersReg:{
     spreadsheetHeaders: '//*[@id="root"]//div[2]//div[5]/div/div[1]/div[2]/div[1]/div/div/div',
     formPP: "(//p[contains(text(),'Сформировать ПП')])[1]",
 },
+DistributedIncomeReg:{
+    categoryMenu: "(//p[@title='distributed_income_registry'])[1]",
+    spreadsheetHeaders: '//*[@id="root"]//div[2]//div[5]/div/div[1]/div[2]/div[1]/div/div/div',
+    exportButton: "(//p[contains(text(),'Экспорт')])[1]",
+},
 
 }
 
