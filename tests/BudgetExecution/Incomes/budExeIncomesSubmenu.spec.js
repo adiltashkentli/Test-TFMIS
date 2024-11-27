@@ -1,21 +1,21 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const BudgetExecutionMenu = require('../../pages/BudgetExecutionMenu')
+const BudExeIncomesMenu = require ('../../../pages/BudExIncomesMenu');
 const Dashboard = require('../../../pages/Dashboard');
 const { assert } = require('console');
 
-test.describe('Меню: Исполнение бюджета', () => {
-  let budgetExecutionMenu;
+test.describe('Подменю: Доходы', () => {
+  let budExeIncomesMenu;
   let dashboard;
     
   test.beforeEach(async ({page}) => {
-    budgetExecutionMenu = new BudgetExecutionMenu(page);
+    budExeIncomesMenu = new BudExeIncomesMenu(page);
     dashboard = new Dashboard(page);    
     await dashboard.login();
-    await budgetExecutionMenu.navigateToPage();
+    await budExeIncomesMenu.navigateToPage();
   });
   test ('Check submenu list', async()=>{
-    await budgetExecutionMenu.checkSubmenuList();
+    await budExeIncomesMenu.checkCategoriesList();
   });
   
     

@@ -2,7 +2,7 @@ const { expect } = require('@playwright/test');
 const Locators = require('../support/locators');
 const dataUser = require('../data/dataUser');
 
-class BudgetExecutionMenu {
+class BudExeIncomesMenu {
     constructor(page) {
         this.page = page;
 
@@ -12,16 +12,13 @@ class BudgetExecutionMenu {
         await this.page.click(Locators.BudgetExecution.menu);
         
     }
-    async checkSubmenuList(){        
-        const submenuList = await this.page.$$(Locators.BudgetExecution.subMenus);
+    async checkCategoriesList(){        
+        const submenuList = await this.page.$$(Locators.SubmenuIncomes.categoriesOfSubmenu);
         const expectedSubmenuList = [
-            'Доходы',
-            'Расходы',
-            'Отчет',
-            'Справочники',
-            'Валютные ОП',
-            'Банк',
-            'Администрирование'
+            'Реестр поступления (перевод со счёта)',
+            'Реестр распределённых доходов',
+            'Реестр поступления за период',
+            'Реестр поступления'
         ];        
         for (let i = 0; i < submenuList.length; i++) {
             const submenuText = await submenuList[i].textContent();
@@ -31,4 +28,4 @@ class BudgetExecutionMenu {
     }    
 }
 
-module.exports = BudgetExecutionMenu;
+module.exports = BudExeIncomesMenu;
