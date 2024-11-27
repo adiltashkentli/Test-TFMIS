@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const AccountsPlan = require('../../pages/AccountsPlan');
-const Dashboard = require('../../pages/Dashboard');
+const AccountsPlan = require('../../../pages/AccountsPlan');
+const Dashboard = require('../../../pages/Dashboard');
 
 test.describe('План счетов', () => {
   let accountsPlan;

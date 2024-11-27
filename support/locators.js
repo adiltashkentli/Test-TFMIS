@@ -261,7 +261,8 @@ AdminsOfIncomes: {
 },
 AccountsPlan: {
     categoryMenu: "(//p[@title='account_plan'])[1]",
-}
+},
+
 
 }
 

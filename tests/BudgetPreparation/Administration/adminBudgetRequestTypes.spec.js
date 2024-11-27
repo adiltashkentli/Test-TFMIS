@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const AdminBudgetRequestTypes = require('../../pages/BudgetRequestTypes')
-const Dashboard = require('../../pages/Dashboard');
+const AdminBudgetRequestTypes = require('../../../pages/BudgetRequestTypes')
+const Dashboard = require('../../../pages/Dashboard');
 const { assert } = require('console');
 
 test.describe('Подменю: Администрирование типов бюджетных заявок', () => {

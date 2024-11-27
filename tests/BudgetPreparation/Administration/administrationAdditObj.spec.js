@@ -1,9 +1,9 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const Administration = require('../../pages/AdministrationAdditObjects')
-const Dashboard = require('../../pages/Dashboard');
+const Administration = require('../../../pages/AdministrationAdditObjects')
+const Dashboard = require('../../../pages/Dashboard');
 const { assert } = require('console');
-const IncomeByRegions = require('../../pages/IncomeByRegions');
+const IncomeByRegions = require('../../../pages/IncomeByRegions');
 
 test.describe('Подменю: Администрирование', () => {
   let administration;
