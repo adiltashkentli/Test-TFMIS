@@ -267,7 +267,14 @@ BudgetExecution:{
     subMenus: '//*[@id="rc-menu-uuid-49922-1-3-popup"]/li',
 },
 SubmenuIncomes: {
+    submenuIncomes: "(//span[contains(text(),'Доходы')])[1]",
     categoriesOfSubmenu: '//*[@id="rc-menu-uuid-49432-1-31-popup"]/li',
+},
+IncomeTransfersReg:{
+    categoryMenu: "(//p[@title='income_transfers_registry'])[1]",
+    tabHeading: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div[2]//div[5]/div/div[1]/div[2]/div[1]/div/div/div',
+    formPP: "(//p[contains(text(),'Сформировать ПП')])[1]",
 },
 
 }

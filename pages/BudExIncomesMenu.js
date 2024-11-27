@@ -5,12 +5,9 @@ const dataUser = require('../data/dataUser');
 class BudExeIncomesMenu {
     constructor(page) {
         this.page = page;
-
     }
-
     async navigateToPage() {
         await this.page.click(Locators.BudgetExecution.menu);
-        
     }
     async checkCategoriesList(){        
         const submenuList = await this.page.$$(Locators.SubmenuIncomes.categoriesOfSubmenu);
