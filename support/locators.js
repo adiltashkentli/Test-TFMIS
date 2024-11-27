@@ -256,7 +256,9 @@ TerritorialClassification: {
 BudgetIndicators: {
     categoryMenu: "(//p[@title='budget_indicators'])[1]",
 },
-
+AdminsOfIncomes: {
+    categoryMenu: "(//p[@title='admins_of_incomes'])[1]",
+},
 
 
 }
