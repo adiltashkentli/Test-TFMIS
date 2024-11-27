@@ -1,31 +1,31 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const BudgetRequestTypes = require('../../pages/BudgetRequestTypes')
+const AdminBudgetRequestTypes = require('../../pages/BudgetRequestTypes')
 const Dashboard = require('../../pages/Dashboard');
 const { assert } = require('console');
 
 test.describe('Подменю: Администрирование типов бюджетных заявок', () => {
-  let budgetRequestTypes;
+  let adminBudgetRequestTypes;
   let dashboard;
   
   
   test.beforeEach(async ({page}) => {
-    budgetRequestTypes = new BudgetRequestTypes(page);
+    adminBudgetRequestTypes = new AdminBudgetRequestTypes(page);
     dashboard = new Dashboard(page);    
     await dashboard.login();
-    await budgetRequestTypes.navigateToPage();
+    await adminBudgetRequestTypes.navigateToPage();
   });
   test ('Check tab header', async()=>{
-    await budgetRequestTypes.checkTabHeader();
+    await adminBudgetRequestTypes.checkTabHeader();
   });  
   test ('Assert relative headers & data', async()=>{
-    await budgetRequestTypes.listOfSpreadsheet();
+    await adminBudgetRequestTypes.listOfSpreadsheet();
   });
   test ('Assert add button', async()=>{
-    await budgetRequestTypes.addButtonAssertion();
+    await adminBudgetRequestTypes.addButtonAssertion();
   });
   test ('Increase pagination', async()=>{
-    await budgetRequestTypes.pagination();
+    await adminBudgetRequestTypes.pagination();
   });
     
 })

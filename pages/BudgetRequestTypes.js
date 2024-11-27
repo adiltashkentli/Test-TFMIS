@@ -1,60 +1,54 @@
 const { expect } = require('@playwright/test');
 const Locators = require('../support/locators');
 const dataUser = require('../data/dataUser');
-const { text } = require('stream/consumers');
 
 class BudgetRequestTypes {
     constructor(page) {
         this.page = page;
     }
     async navigateToPage() {
-        await this.page.click(Locators.Outcomes.budgetPreparationMenu);
-        await this.page.click(Locators.Administration.submenuAdministration);
+        await this.page.click(Locators.IncomeCeiling.budPrepMenuBut);
+        await this.page.click(Locators.Classifiers.menuClassifiers);
         await this.page.click(Locators.BudgetRequestTypes.categoryMenu);
+
     }
     async checkTabHeader() {
-        const tabHeader = await this.page.locator(Locators.BudgetRequestTypes.tabHeader);
-        await expect(tabHeader).toHaveText('Администрирование типов бюджетных заявок');
+        const tabHeader = await this.page.locator(Locators.EconomicalClassification.tabHeader);
+        await expect(tabHeader).toContainText('Типы бюджетных заявок');
     }
-    async selectElementsToList() {
-        //1-Год
-        await this.page.getByText('2024').click();
-        await this.page.getByRole('option', { name: '2023' }).first().click();
-        await this.page.getByText('Список').click();
-    }
-    async listOfSpreadsheet() {
-        const tableHeadings = await this.page.$$(Locators.BudgetRequestTypes.spreadsheetHeaders);
+    async selectElementsToList() {        
+        const actions = [
+            async () => await this.page.locator('div').filter({ hasText: /^09-Пополнение уставного фонда$/ }).locator('div svg').click(),
+            async () => await this.page.locator('div').filter({ hasText: /^0901-Пополнение уставного фонда$/ }).locator('div svg').click(),
+            async () => await this.page.getByText('0901002-"ЧСК ""НБО и Рогун"" барои пурра намудани фонди оинномави"').click(),
+          ];          
+          for (const action of actions) {
+            await action();
+          }
+        // Assertion
+        const code = await this.page.locator(Locators.DepartmentalClassification.codeArea);
+        await expect(code).toHaveValue('09.01.002');
+        const name = await this.page.locator(Locators.DepartmentalClassification.nameArea);
+        await expect(name).toHaveValue('"ЧСК ""НБО и Рогун"" барои пурра намудани фонди оинномави"');
+    }    
+    async checkCategoryHeader() {        
+        const categoryHeader = await this.page.$$(Locators.DepartmentalClassification.categoryHeader);
         const expectedTexts = [
-            'БЗ',
-            'Наименование (таджикский)',
-            'Наименование (русский)',
-            'Наименование (английский)',
-            'Операции',
-        ];
-        for (let i = 0; i < tableHeadings.length; i++) {
-            const headersText = await tableHeadings[i].textContent();
+            '2024',
+            '-',            
+            'Типы бюджетных заявок'];
+
+        for (let i = 0; i < categoryHeader.length; i++) {
+            const headersText = await categoryHeader[i].textContent();
             console.log(headersText);
             expect(headersText.trim()).toBe(expectedTexts[i]);
         }
-        const secLineData = await this.page.$$(Locators.BudgetRequestTypes.secondLineData);
-        const expectedData = [
-            '0101002',
-            'Тайёр намудани кадр?о дар хори?а',
-            '',
-            'Расходы на содержание учреждения',
-        ];
-        for (let i = 0; i < secLineData.length; i++) {
-            const lineData = await secLineData[i].textContent();
-            console.log(lineData);
-            expect(headersText.trim()).toBe(expectedData[i]);
-        }       
     }
-    async addButtonAssertion() {
-        await expect(this.page.locator(Locators.BudgetRequestTypes.addButton)).toBeVisible();
-    }
-    async pagination() {
-        await this.page.getByLabel(Locators.IncomeByRegions.pagination).click();
-        await this.page.getByRole('option', { name: '30' }).click();
-    }
+    async headerButtonsAssertion() {        
+        const headerButtons = await this.page.$$(Locators.DepartmentalClassification.header6Buttons);        
+        for (let i = 0; i < headerButtons.length; i++) {            
+            expect(headerButtons).toBeEnabled();
+        }
+    }    
 }
 module.exports = BudgetRequestTypes;

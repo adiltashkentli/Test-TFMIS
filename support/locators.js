@@ -207,7 +207,7 @@ Administration: {
     categoryAdditObjOfBSlevel: "(//p[@title='additional_objects_of_bz_level'])[1]",
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
 },
-BudgetRequestTypes: {
+AmdinBudgetRequestTypes: {
     categoryMenu: "(//p[@title='admin_budget_request_types'])[1]",
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
     spreadsheetHeaders: '//*[@id="root"]//div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
@@ -244,6 +244,11 @@ IncomeClassification: {
 ProgrammsSubprogramms: {
     categoryMenu: "(//p[@title='cls_programs'])[1]",
 },
+BudgetRequestTypes: {
+    categoryMenu: "(//p[@title='budget_request_types'])[1]",
+    
+},
+
 
 }
 
