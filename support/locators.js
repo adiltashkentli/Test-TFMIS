@@ -262,6 +262,10 @@ AdminsOfIncomes: {
 AccountsPlan: {
     categoryMenu: "(//p[@title='account_plan'])[1]",
 },
+BudgetExecution:{
+    menu: "(//span[contains(text(),'Исполнение бюджета')])[1]",
+    subMenus: '//*[@id="rc-menu-uuid-49922-1-3-popup"]/li',
+}
 
 
 }
