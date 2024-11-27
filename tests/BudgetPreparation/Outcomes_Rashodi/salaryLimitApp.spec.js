@@ -1,9 +1,9 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const SalaryLimitApp = require('../../pages/SalaryLimitApp')
-const Dashboard = require('../../pages/Dashboard');
+const SalaryLimitApp = require('../../../pages/SalaryLimitApp')
+const Dashboard = require('../../../pages/Dashboard');
 const { assert } = require('console');
-const IncomeByRegions = require('../../pages/IncomeByRegions');
+const IncomeByRegions = require('../../../pages/IncomeByRegions');
 
 test.describe('Категория: Лимиты по заработной плате', () => {
   let salaryLimitApp;
