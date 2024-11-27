@@ -69,14 +69,15 @@ IncomeApplicationRegistry: {
     denyToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[2]',
     refuseToReconcileButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[1]/div[11]/div/span[3]',
     checkAllBoxesRadioButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span',
-Budget_Preparation
+},
+Budget_Preparation: {
     checkOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span',
     assertionCheckedBoxes: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span/input',
     assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',
 },
 Outcomes: {
-    budgetPreparationMenu: 'li:nth-child(2) div:nth-child(1) span:nth-child(2)',
-    menuOutcomes: '//span[contains(text(),"Расходы")]',
+    budgetPreparationMenu: "(//span[contains(text(),'Подготовка бюджета')])[1]",
+    menuOutcomes:  '//span[contains(text(),"Расходы")]',
     submenuList: '//*[@id="rc-menu-uuid-69063-1-22-popup"]/li',
 },
 GeneralBudgetCeilings: {
@@ -90,7 +91,7 @@ GeneralBudgetCeilings: {
     spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
 },
 CeilingsBySector: {
-    budgetPreparationMenu: '(//div/span[contains(text(),"Подготовка бюджета")])[1]',
+    budgetPreparationMenu: '//*[@id="root"]/div[2]//div[1]//div/ul/li[2]',
     categoryMenu: '//p[@title="budget_ceilings_by_sector"]',
     tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]//div/p',
     selectYear: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div[1]/div/div',
@@ -106,20 +107,163 @@ CeilingsBySector: {
     saveButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[1]/div[2]/div[3]/div[1]',
     checkOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span',    
     assertionCheckedBoxes: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[1]//div[2]/div[1]//div/span/input',
-    assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',
-  
+    assertionOneBox: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]//div[1]/div[2]/div[2]//div[4]/div[2]/span/input',  
 },
-
-
-
+CeilingsByDepartment:{    
+    categoryMenu: '(//p[@title="budget_ceilings_by_department"])[1]',
+    tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]//div/p',
+    reportSelector: '//*[@id="outlined-basic"]',
+    firstElement: '//div/ul/li[normalize-space()="Ten"]',
+    reportButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]//div[1]/div[3]/div[1]/p',
+    selectYear: '//div[@class="MuiFormControl-root css-1bc8ceu"]//label[@id="demo-simple-select-label"]',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[4]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    saveButton: '//div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/p[1]',
+},
+CeilingsByDistributors: {
+    categoryMenu: '(//p[@title="budget_ceilings_by_distributors"])[1]',
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    saveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div/div[2]/div[2]/div[1]/p',
+    spreadsheetHeaders: '//*[@id="root"]//div/div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+},
+CeilingsByOrganizations: {
+    categoryMenu: "//p[@title='budget_ceilings_by_organizations']",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div/div[3]/div[2]//div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    lockButton: '//*[@id="root"]//div[3]/div[2]//div[1]/div[1]/div[1]/img'
+},
+BudgetRequests: {
+    categoryMenu: "//p[@title='budget_requests']",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
+    reportButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[1]/div[1]/p',
+    addButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div/div[1]/p',
+    addModalHeader: "//div[contains(text(),'Добавление бюджетной заявки')]",
+    saveButton: '//div[2]//div[2]//div[2]//div[2]/div/form/div[6]/button[2]/span',
+},
+RegistryOfCostsRequests:{
+    categoryMenu: "//p[@title='restore_income_registry']",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    listButton: "(//p[contains(text(),'Список')])[1]",
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
+    
+},
+SalaryLimitApp: {
+    categoryMenu: "//p[@title='salary_limit_application']",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    addButton: "(//p[contains(text(),'Добавить')])[1]",
+    modalHeader: "(//div[contains(text(),'Заявка на выделение лимита по заработной плате')])[1]",
+    closeModal: "(//*[name()='svg'][@fill-rule='evenodd'])[1]",
+    modal1stTabHeader: '//div[2]//div[2]//div[2]//div[2]/div[3]/p',
+    modal1sheetHeaders: '//div[2]//div[2]//div[2]//div[2]/div[4]/div/div[1]/div[2]/div[1]/div/div/div',
+    modal2ndTabHeader: '//div[2]//div[2]//div[2]//div[2]/div[5]/p',
+    modal2sheetHeaders: '//div[2]//div[2]//div[2]//div[2]/div[6]/div/div[1]/div[2]/div[1]/div/div/div',
+    modal3thTabHeader: '//div[2]//div[2]//div[2]//div[2]/div[7]/p',
+    modal3sheetHeaders: '//div[2]//div[2]//div[2]//div[2]/div[8]/div/div[1]/div[2]/div[1]/div/div/div',
+},
+ChangesMenu: {
+    submenuChanges: "(//span[contains(text(),'Изменение')])[1]",
+    categoriesOfSubmenu: '//*[@id="rc-menu-uuid-20641-1-23-popup"]/li',
+},
+ChangesExpenditureBudgWithtObj: {
+    categoryMenu: "(//p[@title='changes_expenditure_budget_without_object'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[5]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    newButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]//div[1]/div[1]/p',
+    addLinebutton: "(//p[contains(text(),'Добавить строку')])[1]",
+    modalHeader: "(//p[contains(text(),'Выберите доходную заявку')])[1]",
+    resultListInSpradsheet: '//div[3]//div[2]/div/table/thead/tr/th',    
+    firstLineData: '//div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/table/tbody/tr[1]/td',
+    changesLogButton: '//*[@id="root"]//div[2]/div/div[2]/div[1]/p',
+    changesModalHeader: "(//p[contains(text(),'История изменений')])[2]",
+    changesLogModalSpshHeaders: '//div[2]/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/div/div/div',
+    reportButton:         '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[2]/div[1]/p',
+    readyToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div[3]/div[1]/p',
+    canselReadeToApproveButton: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/button',
+    reconcileButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[4]/div[1]/p',
+    removeDocButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[5]/div[1]/p',
+    saveButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div[6]/div[1]/p',
+    resultsButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[3]/div[1]/p',
+    footer5InputAreas: '//*[@id="root"]/div[2]/div/div/div[3]/div[2]/div/div/div[5]/div[2]/div',
+},
+ChangesExpBudgetWithObject:{
+    categoryMenu: "(//p[@title='changes_expenditure_budget_with_object'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    addLine: "(//p[contains(text(),'Добавить строку')])[1]",
+    modalHeader: "(//p[contains(text(),'Выберите бюджетную заявку и объект')])[1]",
+    modal1sheetHeaders: '//div[2]/div/table/thead/tr/th',
+    modal2sheetHeaders: '//div[2]/div[5]/div/table/thead/tr/th',
+    modal3sheetHeaders: '//div[2]/div[7]/div/table/thead/tr/th'
+},
+ChangesOfIncome: {
+    categoryMenu: "(//p[@title='changes_of_revenue_budget'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    modalHeader: "(//p[contains(text(),'Выберите доходную заявку')])[1]",
+    pagination: '100',
+    listOfSpreadsheet: '//*[@id="root"]/div[2]//div[3]/div[2]//div[5]/div/div[1]/div[2]/div[1]/div/div/div',
+},
+Administration: {
+    submenuAdministration: "(//span[contains(text(),'Администрирование')])[1]",
+    categoriesOfSubmenu: '//*[@id="rc-menu-uuid-21333-1-24-popup"]/li',
+    categoryAdditObjOfBSlevel: "(//p[@title='additional_objects_of_bz_level'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+},
+AmdinBudgetRequestTypes: {
+    categoryMenu: "(//p[@title='admin_budget_request_types'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
+    secondLineData: '//*[@id="root"]//div[2]//div[3]/div/div[1]/div[2]/div[2]/div/div[2]/div',
+    addButton: '//*[@id="root"]/div[2]//div[3]/div[2]//div[1]/div/div[1]/p',
+},
 Classifiers: {
     menuClassifiers: '//span[contains(text(),"Классификаторы")]',
     categoriesOfSubmenu: '//*[@id="rc-menu-uuid-64379-1-25-popup"]//li',
 },
 DepartmentalClassification:{
-    menuDepartmentalClassification: '//*[@id="rc-menu-uuid-64379-1-25-popup"]/li[1]',
+    categoryMenu: "(//p[@title='cls_departmental'])[1]",
     tabHeader: '//*[@id="root"]/div[2]/div/div/div[3]/div[1]/div/div/p',
+    categoryHeader: '//*[@id="root"]//div[2]/div/div/div/div[1]//div/div[1]/div[1]/p',
+    codeArea: "(//input[@id='outlined-basic'])[1]",
+    nameArea: "(//input[@id='outlined-basic'])[2]",
+    header6Buttons: '//*[@id="root"]//div[2]/div/div/div/div[3]/div/div[1]/div/div',
+},
+FunctionalClassification: {
+    categoryMenu: "(//p[@title='cls_functional'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',    
+},
+FinancialSourses: {
+    categoryMenu: "(//p[@title='fin_source'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',    
+},
+EconomicalClassification: {
+    categoryMenu: "(//p[@title='cls_economical'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',    
+},
+IncomeClassification: {
+    categoryMenu: "(//p[@title='cls_of_incomes'])[1]",    
+},
+ProgrammsSubprogramms: {
+    categoryMenu: "(//p[@title='cls_programs'])[1]",
+},
+BudgetRequestTypes: {
+    categoryMenu: "(//p[@title='budget_request_types'])[1]",    
+},
+ExpenceTypes: {
+    categoryMenu: "(//p[@title='expense_types'])[1]",
+},
+TerritorialClassification: {
+    categoryMenu: "(//p[@title='cls_territorials'])[1]",
+},
+BudgetIndicators: {
+    categoryMenu: "(//p[@title='budget_indicators'])[1]",
+},
+AdminsOfIncomes: {
+    categoryMenu: "(//p[@title='admins_of_incomes'])[1]",
+},
+AccountsPlan: {
+    categoryMenu: "(//p[@title='account_plan'])[1]",
 },
 
+
 }
+
 module.exports = Locators;
