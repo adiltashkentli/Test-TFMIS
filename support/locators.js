@@ -250,6 +250,9 @@ BudgetRequestTypes: {
 ExpenceTypes: {
     categoryMenu: "(//p[@title='expense_types'])[1]",
 },
+TerritorialClassification: {
+    categoryMenu: "(//p[@title='cls_territorials'])[1]",
+},
 
 
 }
