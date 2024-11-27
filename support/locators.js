@@ -259,7 +259,9 @@ BudgetIndicators: {
 AdminsOfIncomes: {
     categoryMenu: "(//p[@title='admins_of_incomes'])[1]",
 },
-
+AccountsPlan: {
+    categoryMenu: "(//p[@title='account_plan'])[1]",
+}
 
 }
 
