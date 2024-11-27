@@ -253,6 +253,10 @@ ExpenceTypes: {
 TerritorialClassification: {
     categoryMenu: "(//p[@title='cls_territorials'])[1]",
 },
+BudgetIndicators: {
+    categoryMenu: "(//p[@title='budget_indicators'])[1]",
+},
+
 
 
 }
