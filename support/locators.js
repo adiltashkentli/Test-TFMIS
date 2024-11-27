@@ -245,8 +245,10 @@ ProgrammsSubprogramms: {
     categoryMenu: "(//p[@title='cls_programs'])[1]",
 },
 BudgetRequestTypes: {
-    categoryMenu: "(//p[@title='budget_request_types'])[1]",
-    
+    categoryMenu: "(//p[@title='budget_request_types'])[1]",    
+},
+ExpenceTypes: {
+    categoryMenu: "(//p[@title='expense_types'])[1]",
 },
 
 
