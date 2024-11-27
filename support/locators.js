@@ -265,8 +265,10 @@ AccountsPlan: {
 BudgetExecution:{
     menu: "(//span[contains(text(),'Исполнение бюджета')])[1]",
     subMenus: '//*[@id="rc-menu-uuid-49922-1-3-popup"]/li',
-}
-
+},
+SubmenuIncomes: {
+    categoriesOfSubmenu: '//*[@id="rc-menu-uuid-49432-1-31-popup"]/li',
+},
 
 }
 
