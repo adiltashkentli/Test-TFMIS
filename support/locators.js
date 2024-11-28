@@ -277,9 +277,16 @@ IncomeTransfersReg:{
     formPP: "(//p[contains(text(),'Сформировать ПП')])[1]",
 },
 DistributedIncomeReg:{
-    categoryMenu: "(//p[@title='distributed_income_registry'])[1]",
+    categoryMenu: "(//p[@title='distributed_income_registry'])[1]",    
     spreadsheetHeaders: '//*[@id="root"]//div[2]//div[5]/div/div[1]/div[2]/div[1]/div/div/div',
     exportButton: "(//p[contains(text(),'Экспорт')])[1]",
+},
+PeriodRegistry: {
+    categoryMenu: "(//p[@title='income_receipts_by_period_registry'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div[2]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
+    printListButton: "(//p[contains(text(),'Печать списка')])[1]",
+    reportWithIncomesButton: "(//p[contains(text(),'Отчёт с доходами')])[1]"
 },
 
 }
