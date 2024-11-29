@@ -294,6 +294,14 @@ IncomeRegistry: {
     selectFirstLine: "(//input[@aria-label='Select row'])[1]",
     chekedMessage: "//div[@class='MuiDataGrid-selectedRowCount css-eozsn7']",
     footer16fielsets: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[4]//input',
+    modalHeader: '//*[@id=":r4r:"]/div/p',
+    modalHeader2: '//div[2]/form//div[2]/div[1]/p',
+    modalHeader3: '//div[2]/form//div[3]/div[1]/p',
+    modal1stSprshHdrs: '//div[2]/div[3]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    modal2ndSprshHdrs: '//div[2]/div[6]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    adjustingSpreedButton: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]/div[1]/p',
+    changesButton: '//*[@id="root"]//div[2]//div[1]/div[2]/div[4]/div[1]/p',
+    clearFilterButton: '//*[@id="root"]//div[2]/div/div/div[1]/p'
 }
 
 }

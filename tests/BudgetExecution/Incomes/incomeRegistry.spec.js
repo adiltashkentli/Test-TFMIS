@@ -32,14 +32,14 @@ test.describe('Категория: Реестр поступления', () => {
   test ('Check footer fieldsets not to be editable', async()=>{
     await incomeRegistry.footer16fieldsetsAssertion();
   });
-  /*test ('Edit modal fucntionality', async()=>{
-    await periodRegistry.editModalFunctionality();
+  test ('Offset of overpayment modal fucntionality', async()=>{
+    await incomeRegistry.offsetOfOverpayment();
+  });
+  test ('Return to processing modal fucntionality', async()=>{
+    await incomeRegistry.returnToProcessingModal();
+  });
+  test ('Assert 3 buttons', async()=>{
+    await incomeRegistry.assert3Buttons();
   });
   
-  test ('Assert print list button', async()=>{
-    await periodRegistry.printListButtonAssertion();
-  });
-  test ('Assert report with incomes button', async()=>{
-    await periodRegistry.reportWithIncomesButtonAssertion();
-  });*/
 })
