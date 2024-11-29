@@ -302,6 +302,10 @@ IncomeRegistry: {
     adjustingSpreedButton: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]/div[1]/p',
     changesButton: '//*[@id="root"]//div[2]//div[1]/div[2]/div[4]/div[1]/p',
     clearFilterButton: '//*[@id="root"]//div[2]/div/div/div[1]/p'
+},
+ExpensesSubmenu:{
+    submenuExpenses: "(//span[contains(text(),'Расходы')])[1]",
+    categories: '//*[@id="rc-menu-uuid-12286-1-32-popup"]/li',
 }
 
 }
