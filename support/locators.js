@@ -306,7 +306,12 @@ IncomeRegistry: {
 ExpensesSubmenu:{
     submenuExpenses: "(//span[contains(text(),'Расходы')])[1]",
     categories: '//*[@id="rc-menu-uuid-12286-1-32-popup"]/li',
-}
+},
+InputExpenses: {    
+    categoryMenu: "(//p[@title='input_of_consumption'])[1]",
+    tabHeader: '//*[@id="root"]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div[2]/div/div[1]/div[2]/div[1]/div/div/div'
+},
 
 }
 
