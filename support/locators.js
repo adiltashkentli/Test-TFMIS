@@ -288,6 +288,13 @@ PeriodRegistry: {
     printListButton: "(//p[contains(text(),'Печать списка')])[1]",
     reportWithIncomesButton: "(//p[contains(text(),'Отчёт с доходами')])[1]"
 },
+IncomeRegistry: {
+    categoryMenu: "(//p[@title='registry_of_incomes'])[1]",
+    selectAllRows: "(//input[@aria-label='Select all rows'])[1]",
+    selectFirstLine: "(//input[@aria-label='Select row'])[1]",
+    chekedMessage: "//div[@class='MuiDataGrid-selectedRowCount css-eozsn7']",
+    footer16fielsets: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[4]//input',
+}
 
 }
 
