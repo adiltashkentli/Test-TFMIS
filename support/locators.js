@@ -302,7 +302,16 @@ IncomeRegistry: {
     adjustingSpreedButton: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]/div[1]/p',
     changesButton: '//*[@id="root"]//div[2]//div[1]/div[2]/div[4]/div[1]/p',
     clearFilterButton: '//*[@id="root"]//div[2]/div/div/div[1]/p'
-}
+},
+ExpensesSubmenu:{
+    submenuExpenses: "(//span[contains(text(),'Расходы')])[1]",
+    categories: '//*[@id="rc-menu-uuid-12286-1-32-popup"]/li',
+},
+InputExpenses: {    
+    categoryMenu: "(//p[@title='input_of_consumption'])[1]",
+    tabHeader: '//*[@id="root"]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div[2]/div/div[1]/div[2]/div[1]/div/div/div'
+},
 
 }
 
