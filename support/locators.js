@@ -317,7 +317,16 @@ SalaryLimitApp:{
     tabHeader:'//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
     spreadsheetHeaders: '//*[@id="root"]//div[3]/div/div[1]/div[2]/div[1]/div/div/div',
 },
-
+CashPlan: {
+    categoryMenu: "(//p[@title='cash_plan'])[1]",
+    addNewAppModalButton: "(//p[contains(text(),'Добавить новую заявку')])[1]",
+    modalHeader: "//div[3]/div/div[2]/div/div[2]/div/div/div[1]",
+    modalHeader2: '//div[3]//div[2]//div[2]/div[5]/div[1]/p',
+    modalHeader3: '//div[3]//div[2]//div[2]/div[6]/div[1]/p',
+    modalSpreadsheet: '//div[3]//div[2]/div[5]/div[2]/div[1]/div[2]/div[1]/div/div/div',
+    modalSpreadsheet2: '//div[3]//div[2]/div[6]/div[2]/div[1]/div[2]/div[1]/div/div/div',
+    header5buttons: '//div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[1]/div'
+},
 
 }
 
