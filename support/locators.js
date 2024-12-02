@@ -327,7 +327,13 @@ CashPlan: {
     modalSpreadsheet2: '//div[3]//div[2]/div[6]/div[2]/div[1]/div[2]/div[1]/div/div/div',
     header5buttons: '//div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[1]/div'
 },
-
+TenderAppReg: {
+    categoryMenu: "(//p[@title='tender_application_registry'])[1]",
+    tabHeader: '//*[@id="root"]/div[2]//div[3]/div[1]/div/div/p',
+    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div/div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div',
+    footerInpArea: '(//*[@id="outlined-basic"])[1]',
+    footerInpArea2: '(//*[@id="outlined-basic"])[2]',
+}
 }
 
 module.exports = Locators;
