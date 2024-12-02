@@ -336,9 +336,14 @@ TenderAppReg: {
     header2Buttons: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div/div'
 },
 ContractsRegistry: {
-    categoryMenu: "(//p[@title='contracts_registry'])[1]",
-    
-}
+    categoryMenu: "(//p[@title='contracts_registry'])[1]",    
+},
+ConractObligationsReg: {
+    categoryMenu: "(//p[@title='contract_obligations_registry'])[1]",
+    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div/div[2]/div/div[1]/div[2]/div[1]/div/div/div',
+},
+
+
 }
 
 module.exports = Locators;
