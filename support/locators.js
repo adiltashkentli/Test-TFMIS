@@ -348,8 +348,13 @@ SalaryCalcReg: {
 },
 InvoicesRegistry: {
     categoryMenu: "(//p[@title='invoices_registry'])[1]",
-    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',    
 },
+ExpenseRequestReg:{
+    categoryMenu: "(//p[@title='expenditure_requests_registry'])[1]",
+ 
+}
+
 
 }
 
