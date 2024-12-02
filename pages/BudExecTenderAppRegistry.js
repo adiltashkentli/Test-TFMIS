@@ -88,5 +88,11 @@ class TenderAppReg {
         await expect(footerArea2).toBeEnabled();
         await expect(footerArea2).toHaveValue('0');
     }
+    async headerButtonsAssert(){
+        const headerButtons = await this.page.$$(Locators.TenderAppReg.header2Buttons);
+        for (let i = 0; i < headerButtons.length; i++) {
+            expect(headerButtons).toBeEnabled();
+        }
+    }
 }
 module.exports = TenderAppReg;
