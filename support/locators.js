@@ -344,7 +344,11 @@ ConractObligationsReg: {
 },
 SalaryCalcReg: {
     categoryMenu: "(//p[@title='salary_calculations_registry'])[1]",
-    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div/div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div'
+    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div/div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div',    
+},
+InvoicesRegistry: {
+    categoryMenu: "(//p[@title='invoices_registry'])[1]",
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
 },
 
 }
