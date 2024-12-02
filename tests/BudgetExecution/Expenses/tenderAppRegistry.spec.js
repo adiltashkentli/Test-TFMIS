@@ -29,4 +29,7 @@ test.describe('Категория: Реестр тендерных заявок'
   test ('Check footer areas', async()=>{
     await tenderAppReg.footerAreas();
   });
+  test ('Check header buttons', async()=>{
+    await tenderAppReg.headerButtonsAssert();
+  });
 })

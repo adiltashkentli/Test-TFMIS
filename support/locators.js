@@ -333,7 +333,20 @@ TenderAppReg: {
     spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div/div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div',
     footerInpArea: '(//*[@id="outlined-basic"])[1]',
     footerInpArea2: '(//*[@id="outlined-basic"])[2]',
-}
+    header2Buttons: '//*[@id="root"]/div[2]//div[3]/div[2]/div/div/div[1]/div/div'
+},
+ContractsRegistry: {
+    categoryMenu: "(//p[@title='contracts_registry'])[1]",    
+},
+ConractObligationsReg: {
+    categoryMenu: "(//p[@title='contract_obligations_registry'])[1]",
+    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div/div[2]/div/div[1]/div[2]/div[1]/div/div/div',    
+},
+SalaryCalcReg: {
+    categoryMenu: "(//p[@title='salary_calculations_registry'])[1]",
+    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div/div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div'
+},
+
 }
 
 module.exports = Locators;
