@@ -17,48 +17,38 @@ class TenderAppReg {
         await expect(tabHeader).toContainText('Реестр Тендерных Заявок');
     }
     async chooseRelativeDataToList() {
-        const dateSelectors = [
-            { label: 'Choose date, selected date is 27 нояб. 2024 г', gridcell: '1' },
-            { label: 'Choose date, selected date is 2 дек. 2024 г', gridcell: '10' }
-        ];
-    
-        // Loop through date selectors to handle date selection
-        for (let date of dateSelectors) {
-            await this.page.getByLabel(date.label).click();
-    
-            // Click the exact date (for December, use `nth()` to resolve ambiguity)
-            if (date.gridcell === '10') {
-                // If the gridcell is '10' and there are multiple elements, use nth() to pick the right one
-                await this.page.getByRole('gridcell', { name: date.gridcell, exact: true }).nth(1).click(); // nth(1) targets the second element
-            } else {
-                // For other dates, select normally
-                await this.page.getByRole('gridcell', { name: date.gridcell, exact: true }).click();
-            }
-        }
-    
+        await this.page.locator('div').filter({ hasText: /^От$/ }).getByLabel('Choose date').click();
+        await this.page.locator("(//button[normalize-space()='1'])[1]").click();
+
+        // Select the second date
+        await this.page.locator('div').filter({ hasText: /^До$/ }).getByLabel('Choose date').click();
+        await this.page.locator("(//button[normalize-space()='30'])[1]").click();
+
+
+
         // Select the dropdown and click options
         await this.page.locator('#rc_select_1').click();
         await this.page.locator('div').filter({ hasText: /^101-Дастгоҳи иҷроияи Президенти Ҷумҳурии Тоҷикистон$/ }).locator('svg').first().click();
         await this.page.locator('div').filter({ hasText: /^101\.01-Дастгоҳи иҷроияи Президенти Ҷумҳурии Тоҷикистон$/ }).locator('path').first().click();
         await this.page.getByText('101.01.001').click();
-    
+
         // Choose 'БЗ' and select the option
         await this.page.getByLabel('БЗ').first().click();
         await this.page.getByRole('option', { name: '93' }).click();
         await this.page.getByLabel('93').nth(1).click();
         await this.page.getByRole('option', { name: '-Сохтмони толори мачлисгох' }).click();
-    
+
         // Handle 'Сумма' spinbutton
         await this.page.getByRole('spinbutton', { name: 'Сумма' }).click();
         await this.page.getByRole('spinbutton', { name: 'Сумма' }).fill('50000');
-    
+
         // Final actions
         await this.page.getByText('Список').click();
         await this.page.getByText('Принять к исполнению').click();
         await this.page.getByText('Согласовать').click();
     }
-    
-    async checkSpreadsheetHeadings(){
+
+    async checkSpreadsheetHeadings() {
         const spreadsheetHeaders = await this.page.$$(Locators.TenderAppReg.spreadsheetHeaders);
         const expectedTexts = [
             '№',
@@ -81,14 +71,14 @@ class TenderAppReg {
         await this.page.getByLabel(Locators.IncomeByRegions.pagination).click();
         await this.page.getByRole('option', { name: '30' }).click();
     }
-    async footerAreas(){
+    async footerAreas() {
         const footerArea1 = await this.page.locator(Locators.TenderAppReg.footerInpArea);
         await expect(footerArea1).toBeDisabled();
         const footerArea2 = await this.page.locator(Locators.TenderAppReg.footerInpArea2);
         await expect(footerArea2).toBeEnabled();
         await expect(footerArea2).toHaveValue('0');
     }
-    async headerButtonsAssert(){
+    async headerButtonsAssert() {
         const headerButtons = await this.page.$$(Locators.TenderAppReg.header2Buttons);
         for (let i = 0; i < headerButtons.length; i++) {
             expect(headerButtons).toBeEnabled();
