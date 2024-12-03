@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const TerritorialClassification = require('../../pages/TerritorialClassification');
-const Dashboard = require('../../pages/Dashboard');
+const TerritorialClassification = require('../../../pages/TerritorialClassification');
+const Dashboard = require('../../../pages/Dashboard');
 
 test.describe('Территориальная классификация', () => {
   let territorialClassification;

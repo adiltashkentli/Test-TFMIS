@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const IncomeByRegions = require('../../pages/IncomeByRegions');
-const Dashboard = require('../../pages/Dashboard');
+const IncomeByRegions = require('../../../pages/IncomeByRegions');
+const Dashboard = require('../../../pages/Dashboard');
 
 test.describe('Доходы по областям', () => {
   let income_Regions;

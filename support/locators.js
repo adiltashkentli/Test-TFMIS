@@ -364,6 +364,9 @@ ExpensesWithoutBudg: {
 ExpenseObjects:{
     categoryMenu: "(//p[@title='expense_objects_registry'])[1]",
 },
+ContractObligationSelfPaymReg: {
+    categoryMenu: "(//p[@title='contract_obligation_self_payment_registry'])[1]",
+},
 
 }
 

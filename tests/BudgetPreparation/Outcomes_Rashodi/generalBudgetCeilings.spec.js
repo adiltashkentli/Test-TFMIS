@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const GeneralBudgetCeilings = require('../../pages/GeneralBudgetCeilings')
-const Dashboard = require('../../pages/Dashboard');
+const GeneralBudgetCeilings = require('../../../pages/GeneralBudgetCeilings')
+const Dashboard = require('../../../pages/Dashboard');
 const { assert } = require('console');
 
 test.describe('Категория: Общие бюджетные потолки', () => {
