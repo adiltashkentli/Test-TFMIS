@@ -351,9 +351,12 @@ InvoicesRegistry: {
     spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',    
 },
 ExpenseRequestReg:{
-    categoryMenu: "(//p[@title='expenditure_requests_registry'])[1]",
- 
-}
+    categoryMenu: "(//p[@title='expenditure_requests_registry'])[1]", 
+},
+AccountingCertificate: {
+    categoryMenu: "(//p[@title='accounting_certificate'])[1]",
+    modalSheetHeaders: '//div[2]//div[2]/div[3]/div/div/div[1]/div[2]/div[1]/div/div/div',
+},
 
 
 }
