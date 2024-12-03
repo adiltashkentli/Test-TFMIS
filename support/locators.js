@@ -357,7 +357,10 @@ AccountingCertificate: {
     categoryMenu: "(//p[@title='accounting_certificate'])[1]",
     modalSheetHeaders: '//div[2]//div[2]/div[3]/div/div/div[1]/div[2]/div[1]/div/div/div',
 },
-
+ExpensesWithoutBudg: {
+    categoryMenu: "(//p[@title='expenses_without_budget'])[1]",
+    spreadsheetHeaders: '//*[@id="root"]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div'
+},
 
 }
 
