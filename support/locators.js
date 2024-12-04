@@ -382,6 +382,9 @@ TravelExpensesRegistry: {
     acceptToExecButton: '//*[@id="root"]//div[2]//div[1]/div[1]/div[1]/div[1]/p',
     approveButton: '//*[@id="root"]//div[2]//div[1]/div[1]/div[2]/div[1]/p',
 },
+CKVappReg: {
+    categoryMenu: "(//p[@title='ckv_applications_registry'])[1]",
+},
 
 
 
