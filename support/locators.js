@@ -370,7 +370,7 @@ ContractObligationSelfPaymReg: {
 },
 TravelExpensesRegistry: {
     categoryMenu: "(//p[@title='travel_expenses_registry'])[1]",
-    row1: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[3]/div[1]/div[1]',
+    row1: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[3]/div[1]/div[1]',    
     row2: '//*[@id="root"]//div[2]//div[2]//div/div[4]/div[1]/div[1]/div/div',
     row3: '//*[@id="root"]//div[2]//div[2]//div/div[5]/div[1]/div[1]/div/div',
     row4: '//*[@id="root"]//div[2]//div[2]//div/div[6]/div[1]/div[1]/div/div',
@@ -381,6 +381,28 @@ TravelExpensesRegistry: {
     row9: '//*[@id="root"]//div[2]//div[2]//div/div[11]/div[1]/div[1]/div/div',
     acceptToExecButton: '//*[@id="root"]//div[2]//div[1]/div[1]/div[1]/div[1]/p',
     approveButton: '//*[@id="root"]//div[2]//div[1]/div[1]/div[2]/div[1]/p',
+},
+CKVappReg: {
+    categoryMenu: "(//p[@title='ckv_applications_registry'])[1]",
+},
+SomoniPaymentsReg: {
+    categoryMenu: "(//p[@title='somoni_payments_registry'])[1]",
+    row1: '//*[@id="root"]//div[2]//div[2]//div[1]/div[2]/div[1]//div[3]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[4]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[5]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[6]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[7]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[8]/div[1]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[9]/div[1]/div[1]/div/div',
+    row8: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[10]/div[1]/div[1]/div/div',
+    row9: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[11]/div[1]/div[1]/div/div',
+    row10: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[12]/div[1]/div[1]/div/div',
+    row11: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[13]/div[1]/div[1]/div/div',
+    row12: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[14]/div[1]/div[1]/div/div',
+    row13: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[15]/div[1]/div[1]/div/div',
+    row14: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[16]/div[1]/div[1]/div/div',
+    row15: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[17]/div[1]/div[1]/div/div',
+    listReportButton: "(//p[contains(text(),'Отчет списка')])[1]",
 },
 
 
