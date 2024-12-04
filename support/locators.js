@@ -348,7 +348,7 @@ SalaryCalcReg: {
 },
 InvoicesRegistry: {
     categoryMenu: "(//p[@title='invoices_registry'])[1]",
-    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',    
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
 },
 ExpenseRequestReg:{
     categoryMenu: "(//p[@title='expenditure_requests_registry'])[1]", 
@@ -404,7 +404,10 @@ SomoniPaymentsReg: {
     row15: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[17]/div[1]/div[1]/div/div',
     listReportButton: "(//p[contains(text(),'Отчет списка')])[1]",
 },
-
+CheckIssuanceReg: {
+    categoryMenu: "(//p[@title='check_issuance_registry'])[1]",
+    headerButton: "(//p[contains(text(),'Обналичено')])[1]",
+},
 
 
 
