@@ -1,9 +1,9 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const RegistryOfCostsRequests = require('../../pages/RegistryOfCostsRequests')
-const Dashboard = require('../../pages/Dashboard');
+const RegistryOfCostsRequests = require("../../../pages/RegistryOfCostsRequests");
+const Dashboard = require("../../../pages/Dashboard");
+const IncomeByRegions = require("../../../pages/IncomeByRegions");
 const { assert } = require('console');
-const IncomeByRegions = require('../../pages/IncomeByRegions');
 
 test.describe('Категория: Бюджетные заявки "ПБС"', () => {
   let registryOfCostsRequests;

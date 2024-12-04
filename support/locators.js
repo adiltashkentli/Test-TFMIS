@@ -359,11 +359,32 @@ AccountingCertificate: {
 },
 ExpensesWithoutBudg: {
     categoryMenu: "(//p[@title='expenses_without_budget'])[1]",
-    spreadsheetHeaders: '//*[@id="root"]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div'
+    spreadsheetHeaders: '//*[@id="root"]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
+    
 },
 ExpenseObjects:{
     categoryMenu: "(//p[@title='expense_objects_registry'])[1]",
 },
+ContractObligationSelfPaymReg: {
+    categoryMenu: "(//p[@title='contract_obligation_self_payment_registry'])[1]",
+},
+TravelExpensesRegistry: {
+    categoryMenu: "(//p[@title='travel_expenses_registry'])[1]",
+    row1: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[3]/div[1]/div[1]',
+    row2: '//*[@id="root"]//div[2]//div[2]//div/div[4]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[2]//div[2]//div/div[5]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[2]//div[2]//div/div[6]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[2]//div[2]//div/div[7]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[2]//div[2]//div/div[8]/div[1]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[2]//div[2]//div/div[9]/div[1]/div[1]/div/div',
+    row8: '//*[@id="root"]//div[2]//div[2]//div/div[10]/div[1]/div[1]/div/div',
+    row9: '//*[@id="root"]//div[2]//div[2]//div/div[11]/div[1]/div[1]/div/div',
+    acceptToExecButton: '//*[@id="root"]//div[2]//div[1]/div[1]/div[1]/div[1]/p',
+    approveButton: '//*[@id="root"]//div[2]//div[1]/div[1]/div[2]/div[1]/p',
+},
+
+
+
 
 }
 

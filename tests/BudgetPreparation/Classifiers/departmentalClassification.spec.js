@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const DepartmentalClassification = require('../../pages/DepartmentalClassification');
-const Dashboard = require('../../pages/Dashboard');
+const DepartmentalClassification = require('../../../pages/DepartmentalClassification');
+const Dashboard = require('../../../pages/Dashboard');
 
 test.describe('Ведомственная классификация', () => {
   let departmentalClassification;

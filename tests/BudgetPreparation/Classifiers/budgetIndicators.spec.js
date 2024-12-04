@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const BudgetIndicators = require('../../pages/BudgetIndicators');
-const Dashboard = require('../../pages/Dashboard');
+const BudgetIndicators = require('../../../pages/BudgetIndicators');
+const Dashboard = require('../../../pages/Dashboard');
 
 test.describe('Бюджетные показатели', () => {
   let budgetIndicators;

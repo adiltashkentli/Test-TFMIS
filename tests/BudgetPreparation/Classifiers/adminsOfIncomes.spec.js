@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const AdminsOfIncomes = require('../../pages/AdminsOfIncomes');
-const Dashboard = require('../../pages/Dashboard');
+const AdminsOfIncomes = require('../../../pages/AdminsOfIncomes');
+const Dashboard = require('../../../pages/Dashboard');
 
 test.describe('Администраторы доходов', () => {
   let adminsOfIncomes;

@@ -1,9 +1,9 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const CeilingsBySector = require('../../pages/CeilingsBySector')
-const Dashboard = require('../../pages/Dashboard');
+const CeilingsBySector = require('../../../pages/CeilingsBySector')
+const Dashboard = require('../../../pages/Dashboard');
 const { assert } = require('console');
-const IncomeByRegions = require('../../pages/IncomeByRegions');
+const IncomeByRegions = require('../../../pages/IncomeByRegions');
 
 test.describe('Категория: Потолки по секторам', () => {
   let ceilingsBySector;
