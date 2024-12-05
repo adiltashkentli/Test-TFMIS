@@ -449,7 +449,41 @@ OtherExpenses: {
 EnteringBObalanceFunds:{
     categoryMenu: "(//p[@title='entering_bo_balance_funds'])[1]",
 },
-
+BudgetExecutionReports:{
+    categoryMenu: "(//p[@title='budget_execution_reports'])[1]",
+    categoryHeader: '//*[@id="root"]//div[2]//div[1]//div[1]/button/div/div/div',
+    cat1: '//*[@id="root"]//div[2]//div[1]//div[1]/div/div/div[2]/p[1]',
+    cat2: '//*[@id="root"]//div[2]//div[1]//div[1]/div/div/div[2]/p[2]',
+    cat3: '//*[@id="root"]//div[2]//div[1]//div[1]/div/div/div[2]/p[3]',
+    cat4: '//*[@id="root"]//div[2]//div[1]//div[1]/div/div/div[2]/p[4]',
+    cat5: '//*[@id="root"]//div[2]//div[1]//div[1]/div/div/div[2]/p[5]',
+    cat6: '//*[@id="root"]//div[2]//div[1]//div[1]/div/div/div[2]/p[6]',
+    button1: '//*[@id="root"]//div[2]/div/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]',
+    button2: '//*[@id="root"]//div[2]/div/div/div/div[2]/div[1]/div[1]/div[1]/div[2]/span[1]',
+    button3: '//*[@id="root"]//div[2]/div/div/div/div[2]/div[1]/div[1]/div[1]/div[3]/span[1]',
+    text1: '//*[@id="root"]//div[2]//div[2]/div[1]/div[1]/div[1]/div[1]/span[2]',
+    text2: '//*[@id="root"]//div[2]//div[2]/div[1]/div[1]/div[1]/div[2]/span[2]',
+    text3: '//*[@id="root"]//div[2]//div[2]/div[1]/div[1]/div[1]/div[3]/span[2]',
+    row1: "(//div[contains(text(),'Счет №')])[1]",
+    row2: "(//div[contains(text(),'Дебет')])[1]",
+    row3: "(//div[contains(text(),'Кредит')])[1]",
+    row4: "(//div[contains(text(),'Разница')])[1]",
+    input1: '//*[@id=":r1i:-label"]',
+    input2: '//*[@id=":r1j:"]',
+    input3: '//*[@id=":r1k:"]',
+    input4: '//*[@id=":r1l:-label"]',
+    input5: '//*[@id=":r1m:"]',
+    input6: '//*[@id=":r1n:-label"]',
+    input7: '//*[@id=":r1o:"]',
+    input8: '//*[@id=":r1p:-label"]',
+    input9: '//*[@id=":r1q:"]',
+    input10: '//*[@id=":r1r:"]',
+    input11: '//*[@id=":r1s:"]',
+    input12: '//*[@id=":r1t:"]',
+    input13: '//*[@id=":r1u:"]',
+    input14: '//*[@id=":r1v:"]',
+    input15: '//*[@id=":r20:"]',
+}
 
 
 
