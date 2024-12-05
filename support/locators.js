@@ -436,7 +436,9 @@ BalanceSheet:{
 AccountReport:{
     categoryMenu: "(//p[@title='accounting_reports'][contains(text(),'Бухгалтерские отчеты')])[1]",
 },
-
+ExcractReports: {
+    categoryMenu: "(//p[@title='extract_reports'])[1]",
+},
 }
 
 module.exports = Locators;
