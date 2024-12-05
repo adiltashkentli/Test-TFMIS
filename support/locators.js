@@ -387,6 +387,7 @@ CKVappReg: {
 },
 SomoniPaymentsReg: {
     categoryMenu: "(//p[@title='somoni_payments_registry'])[1]",
+    row: '//*[@id="root"]//div[2]//div[2]//div[1]/div[2]/div[1]/div/div/div[2]/div[1]/div[1]/div/div',
     row1: '//*[@id="root"]//div[2]//div[2]//div[1]/div[2]/div[1]//div[3]/div[1]/div[1]/div/div',
     row2: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[4]/div[1]/div[1]/div/div',
     row3: '//*[@id="root"]//div[2]//div[1]/div[2]/div[1]//div[5]/div[1]/div[1]/div/div',
@@ -430,9 +431,20 @@ ReportSubmenu:{
     cat11: "(//p[@title='income_statement'])[1]",
 },
 BalanceSheet:{
-    categoryMenu: "(//p[@title='balance_sheet'])[1]",
-    
+    categoryMenu: "(//p[@title='balance_sheet'])[1]",    
 },
+AccountReport:{
+    categoryMenu: "(//p[@title='accounting_reports'][contains(text(),'Бухгалтерские отчеты')])[1]",
+},
+ExcractReports: {
+    categoryMenu: "(//p[@title='extract_reports'])[1]",
+},
+BalanceOfPeriod: {
+    categoryMenu: "(//p[@title='balance_of_period'])[1]",
+}
+
+
+
 
 }
 
