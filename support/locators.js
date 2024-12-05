@@ -441,7 +441,12 @@ ExcractReports: {
 },
 BalanceOfPeriod: {
     categoryMenu: "(//p[@title='balance_of_period'])[1]",
-}
+},
+OtherExpenses: {
+    categoryMenu: "(//p[@title='other_expenses'])[1]",
+    printButton: "(//p[contains(text(),'Печать Excel')])[1]",
+},
+
 
 
 
