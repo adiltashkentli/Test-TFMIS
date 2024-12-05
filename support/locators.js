@@ -439,6 +439,13 @@ AccountReport:{
 ExcractReports: {
     categoryMenu: "(//p[@title='extract_reports'])[1]",
 },
+BalanceOfPeriod: {
+    categoryMenu: "(//p[@title='balance_of_period'])[1]",
+}
+
+
+
+
 }
 
 module.exports = Locators;
