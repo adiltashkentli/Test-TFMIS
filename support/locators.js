@@ -348,7 +348,7 @@ SalaryCalcReg: {
 },
 InvoicesRegistry: {
     categoryMenu: "(//p[@title='invoices_registry'])[1]",
-    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',
+    spreadsheetHeaders: '//*[@id="root"]/div[2]//div[3]/div[2]//div[2]/div/div[1]/div[2]/div[1]/div/div/div',    
 },
 ExpenseRequestReg:{
     categoryMenu: "(//p[@title='expenditure_requests_registry'])[1]", 
@@ -408,7 +408,12 @@ CheckIssuanceReg: {
     categoryMenu: "(//p[@title='check_issuance_registry'])[1]",
     headerButton: "(//p[contains(text(),'Обналичено')])[1]",
 },
-
+TransferAppReg: {
+    categoryMenu: "(//p[@title='translation_application_registry'])[1]",
+    spreadsheetHeaders: '//*[@id="root"]//div[2]/div/div/div[2]/div/div[1]/div[2]/div[1]/div/div/div',
+    takeToExecButton: "(//p[contains(text(),'Принять к исполнению')])[1]",
+    acceptButton: "(//p[contains(text(),'Утвердить')])[1]",
+},
 
 
 }
