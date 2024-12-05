@@ -414,7 +414,25 @@ TransferAppReg: {
     takeToExecButton: "(//p[contains(text(),'Принять к исполнению')])[1]",
     acceptButton: "(//p[contains(text(),'Утвердить')])[1]",
 },
-
+ReportSubmenu:{
+    submenu: "(//span[@class='ant-menu-title-content'][contains(text(),'Отчет')])[1]",
+    categoriesOfSubmenu: '//*[@id="rc-menu-uuid-77711-1-33-popup"]/li',
+    cat1: "(//p[@title='balance_sheet'])[1]",
+    cat2: "(//p[@title='accounting_reports'][contains(text(),'Бухгалтерские отчеты')])[1]",
+    cat3: "(//p[@title='extract_reports'])[1]",
+    cat4: "(//p[@title='balance_of_period'])[1]",
+    cat5: "(//p[@title='other_expenses'])[1]",
+    cat6: "(//p[@title='entering_bo_balance_funds'])[1]",
+    cat7: "(//p[@title='budget_execution_reports'])[1]",
+    cat8: "(//p[@title='accounting_reports'][contains(text(),'Бухгалтерские отчеты')])[2]",
+    cat9: "(//p[@title='financial_reports'])[1]",
+    cat10: "(//p[@title='reports_of_income'])[1]",
+    cat11: "(//p[@title='income_statement'])[1]",
+},
+BalanceSheet:{
+    categoryMenu: "(//p[@title='balance_sheet'])[1]",
+    
+},
 
 }
 

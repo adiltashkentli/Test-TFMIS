@@ -36,7 +36,7 @@ class ExpensesSubmenu {
         for (let i = 0; i < submenuList.length; i++) {
             const submenuText = await submenuList[i].textContent();
             console.log(submenuText);
-            expect(submenuText.trim()).toBe(expectedSubmenuList[i]);
+            expect(submenuText.trim()).toBe(expectedCategoriesList[i]);
         }
     }    
 }
