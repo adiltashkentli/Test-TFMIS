@@ -446,7 +446,9 @@ OtherExpenses: {
     categoryMenu: "(//p[@title='other_expenses'])[1]",
     printButton: "(//p[contains(text(),'Печать Excel')])[1]",
 },
-
+EnteringBObalanceFunds:{
+    categoryMenu: "(//p[@title='entering_bo_balance_funds'])[1]",
+},
 
 
 
