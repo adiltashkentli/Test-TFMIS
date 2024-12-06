@@ -483,8 +483,10 @@ BudgetExecutionReports:{
     input13: '//*[@id=":r1u:"]',
     input14: '//*[@id=":r1v:"]',
     input15: '//*[@id=":r20:"]',
-}
-
+},
+FinancialReports:{
+    categoryMenu: "(//p[@title='financial_reports'])[1]",
+},
 
 
 }
