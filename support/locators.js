@@ -1,3 +1,5 @@
+const OperationalDay = require("../pages/BudExecOperationalDay");
+
 const Locators = {
 MainPage: {
     headText: '//*[@id="root"]/div[2]/div[2]/div/div/div[2]/span[1]',
@@ -511,7 +513,15 @@ DirectorySubmenu:{
     cat17: "(//p[@title='binding_of_curators'])[1]",
     cat18: "(//p[@title='manual_debt'])[1]",
 },
-
+OperationalDay:{
+    categoryMenu: "(//p[@title='operating_day'])[1]",
+    currentDay: '//*[@id="root"]//div[2]/div/div/div/div/p[2]',
+    dateSelector: "//button[@aria-label='Choose date']//*[name()='svg']",
+    date: "(//button[normalize-space()='10'])[1]",
+    saveButton: "(//span[contains(text(),'Сохранить')])[1]",
+    alert: "(//span[contains(text(),'Операционная дата обновлена!')])[1]",
+    closeButton: "(//span[contains(text(),'Закрыть')])[1]"
+},
 
 
 }
