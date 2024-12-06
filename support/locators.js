@@ -490,6 +490,29 @@ FinancialReports:{
 ReportsofIncome: {
     categoryMenu: "(//p[@title='reports_of_income'])[1]",
 },
+DirectorySubmenu:{
+    submenu: "(//span[contains(text(),'Справочники')])[1]",
+    cat1: "(//p[@title='operating_day'])[1]",
+    cat2: "(//p[@title='goods_and_services'])[1]",
+    cat3: "(//p[@title='inn_registration'])[1]",
+    cat4: "(//p[@title='tender_applications'])[1]",
+    cat5: "(//p[@title='payers'])[1]",
+    cat6: "(//p[@title='contracts'])[1]",
+    cat7: "(//p[@title='recipients'])[1]",
+    cat8: "(//p[@title='salary_of_recipients'])[1]",
+    cat9: "(//p[@title='banks'])[1]",
+    cat10: "(//p[@title='notification_of_refusal'])[1]",
+    cat11: "(//p[@title='account_plan'])[1]",
+    cat12: "(//p[@title='treasure_department'])[1]",
+    cat13: "(//p[@title='trasure_binding_with_bz'])[1]",
+    cat14: "(//p[@title='manual_of_cities'])[1]",
+    cat15: "(//p[@title='bz_binding'])[1]",
+    cat16: "(//p[@title='curators'])[1]",
+    cat17: "(//p[@title='binding_of_curators'])[1]",
+    cat18: "(//p[@title='manual_debt'])[1]",
+},
+
+
 
 }
 
