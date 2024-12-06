@@ -522,6 +522,20 @@ OperationalDay:{
     alert: "(//span[contains(text(),'Операционная дата обновлена!')])[1]",
     closeButton: "(//span[contains(text(),'Закрыть')])[1]"
 },
+GoodsandServices:{
+    categoryMenu: "(//p[@title='goods_and_services'])[1]",
+    inputArea: "(//input[@id=':r1a:'])[1]",
+    searchButton: "(//p[contains(text(),'Поиск')])[1]",
+    resultItem: "(//span[contains(text(),'По ценным бумагам, кроме акций -2313-1-514310 - 23')])[1]",
+},
+RegistrationINN:{
+    categoryMenu: "(//p[@title='inn_registration'])[1]",
+    row1: "(//div[contains(text(),'ИНН')])[1]",
+    row2: "(//div[contains(text(),'Название')])[1]",
+    row3: "(//div[contains(text(),'Тип')])[1]",
+    row4: "(//div[contains(text(),'Операции')])[1]"
+},
+
 
 
 }
