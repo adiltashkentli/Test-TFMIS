@@ -487,7 +487,9 @@ BudgetExecutionReports:{
 FinancialReports:{
     categoryMenu: "(//p[@title='financial_reports'])[1]",
 },
-
+ReportsofIncome: {
+    categoryMenu: "(//p[@title='reports_of_income'])[1]",
+},
 
 }
 
