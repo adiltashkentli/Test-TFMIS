@@ -39,6 +39,7 @@ module.exports = defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://tfmis.vercel.app/',
     actionTimeout: 30000, // Timeout for actions
+    slowMo: 1000,
     navigationTimeout: 450000,  // 30 seconds timeout for page loads (optional)
     waitUntil: 'load',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
