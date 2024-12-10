@@ -569,7 +569,18 @@ TenderApplications: {
     lastPageInput8: '(//*[@id="outlined-basic"])[8]',
     lastPageInput9: '(//*[@id="outlined-basic"])[9]',
 },
-
+PayersBudgetOrg:{
+    categoryMenu: "(//p[@title='payers'])[1]",
+    addINNbutton: "(//p[contains(text(),'Добавить ИНН')])[1]",
+    saveButton: "(//p[contains(text(),'Сохранить')])[1]",
+    addAccountButton: "(//p[contains(text(),'Добавить счет')])[1]",
+    paginationSelector: '//*[@id="root"]//div[2]/div[2]//div[2]/div[2]/div/div[2]',
+    row1: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[4]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[5]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[6]/div[1]/div[1]/div/div'
+},
 
 }
 
