@@ -581,6 +581,31 @@ PayersBudgetOrg:{
     row4: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[5]/div[1]/div[1]/div/div',
     row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[6]/div[1]/div[1]/div/div'
 },
+Contracts:{
+    categoryMenu: "(//p[@title='contracts'])[1]",
+    header1: '//*[@id=":r15:"]',
+    header2: '//*[@id=":r16:"]',
+    header3: '//*[@id=":r17:"]',
+    header4: '//*[@id=":r18:"]',    
+    header5: '//*[@id="root"]//div[2]/div/div/div[1]/div[2]/div[5]/div',
+    header6: '//*[@id=":r1a:"]',
+    listButton: '//*[@id="root"]//div[1]/div[2]/div[7]/div[1]/p',
+    row1: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[2]//div[1]/div/div/div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[4]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[5]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[6]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[7]/div[1]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[8]/div[1]/div[1]/div/div',
+    row8: '//*[@id="root"]//div[9]/div[1]/div[1]/div/div',
+    row9: '//*[@id="root"]//div[10]/div[1]/div[1]/div/div',
+    footerInput: '//*[@id=":r1b:"]',
+    addNewContractBetton: "(//p[contains(text(),'Добавить новый контракт')])[1]",
+
+},
+
+
+
 
 }
 
