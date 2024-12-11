@@ -650,8 +650,33 @@ Salary:{
 Banks: {
     categoryMenu: "(//p[@title='banks'])[1]",    
     alert2: '//*[@id="3"]/div[1]/div[2]',
-
 },
+NotificationOfRefusal: {
+    categoryMenu: "(//p[@title='notification_of_refusal'])[1]",
+    row1: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[4]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[5]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[6]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[7]/div[1]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[8]/div[1]/div[1]/div/div',
+    row8: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[9]/div[1]/div[1]/div/div',
+    row9: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[10]/div[1]/div[1]/div/div',
+},
+AccountPlan: {
+    categoryMenu: "(//p[@title='account_plan'])[1]",
+    code: '//*[@id="createForm"]/div[1]/div/div/div/div/div/div/div/div/input',
+    name: '//*[@id="createForm"]/div[2]/div/div/div/div/div/div/div/div/input',
+    description: "(//textarea[@id='createForm_description'])[1]",
+    text1: "(//span[contains(text(),'Скопировать предыдущий год')])[1]",
+    text2: "(//span[contains(text(),'Экспорт из системы')])[1]",
+    text3: "(//span[contains(text(),'Импорт из файла')])[1]",
+    alert: "(//span[contains(text(),'Классификация успешно сохранена!')])[1]",
+    reportButton: "(//p[contains(text(),'Отчет')])[1]",
+    deleteButton: "(//p[contains(text(),'Удалить')])[1]",
+},
+
+
 
 
 }
