@@ -630,7 +630,23 @@ Recipients:{
     row4: "(//div[@class='MuiDataGrid-columnHeaderTitle css-mh3zap'][normalize-space()='-'])[2]",
     deleteButton: "(//p[contains(text(),'Удалить')])[1]",
 },
-
+Salary:{
+    categoryMenu: "(//p[@title='salary_of_recipients'])[1]",
+    listButton: "(//p[contains(text(),'Список')])[1]",    
+    taxType: "(//label[contains(text(),'Вид удержания (Перечисление)')])[1]",
+    staffSocialTax: "(//li[contains(text(),'21111 - Социальный налог с работника')])[1]",
+    addButton: "(//p[contains(text(),'Добавить')])[1]",
+    modalHeader: "(//div[contains(text(),'Добавить')])[1]",
+    row1: '//*[@id="root"]//div[1]//div[1]/div/div/div[2]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[1]//div[1]/div/div/div[3]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[1]//div[1]/div/div/div[4]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[1]//div[1]/div/div/div[5]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[1]//div[1]/div/div/div[6]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[1]//div[1]/div/div/div[7]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[1]//div[1]/div/div/div[8]/div[1]/div/div',
+    row8: '//*[@id="root"]//div[1]//div[1]/div/div/div[9]/div[1]/div/div',
+    row9: '//*[@id="root"]//div[1]//div[1]/div/div/div[10]/div[1]/div/div',
+},
 
 
 
