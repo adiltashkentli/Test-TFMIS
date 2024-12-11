@@ -647,7 +647,11 @@ Salary:{
     row8: '//*[@id="root"]//div[1]//div[1]/div/div/div[9]/div[1]/div/div',
     row9: '//*[@id="root"]//div[1]//div[1]/div/div/div[10]/div[1]/div/div',
 },
+Banks: {
+    categoryMenu: "(//p[@title='banks'])[1]",    
+    alert2: '//*[@id="3"]/div[1]/div[2]',
 
+},
 
 
 }
