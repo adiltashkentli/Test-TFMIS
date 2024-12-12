@@ -686,7 +686,27 @@ TreasureDepartment:{
     row7: '//*[@id="root"]//div[1]/div[2]//div/div[8]/div[1]/div[1]/div/div',
     row8: '//*[@id="root"]//div[1]/div[2]//div/div[9]/div[1]/div[1]/div/div',    
 },
-
+BidndingTreasureDprt:{
+    categoryMenu: "(//p[@title='trasure_binding_with_bz'])[1]",
+    modalspsh1: '//div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[2]/div[1]/div[1]/div/div',
+    modalspsh2: '//div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[3]/div[1]/div[1]/div/div',
+    modalspsh3: '//div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[4]/div[1]/div[1]/div/div',
+    modalspsh4: '//div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[5]/div[1]/div[1]/div/div',
+    modalspsh5: '//div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[6]/div[1]/div[1]/div/div',
+    modalspsh6: '//div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[7]/div[1]/div[1]/div/div',
+    modalspsh7: '//div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[8]/div[1]/div[1]/div/div',
+    row1: '//*[@id="root"]//div[1]/div[2]//div/div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[1]/div[2]//div/div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[1]/div[2]//div/div[4]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[1]/div[2]//div/div[5]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[1]/div[2]//div/div[6]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[1]/div[2]//div/div[7]/div[1]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[1]/div[2]//div/div[8]/div[1]/div[1]/div/div',
+    row8: '//*[@id="root"]//div[1]/div[2]//div/div[9]/div[1]/div[1]/div/div',
+    row9: '//*[@id="root"]//div[1]/div[2]//div/div[10]/div[1]/div[1]/div/div',
+    row10: '//*[@id="root"]//div[1]/div[2]//div/div[11]/div[1]/div[1]/div/div',
+    row11: '//*[@id="root"]//div[1]/div[2]//div/div[12]/div[1]/div[1]/div/div',
+}
 
 
 }
