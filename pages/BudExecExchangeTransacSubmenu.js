@@ -1,6 +1,6 @@
-const { expect } = require('@playwright/test');
-const Locators = require('../support/locators');
-const dataUser = require('../data/dataUser');
+import { expect } from '@playwright/test';
+import { BudgetExecution, ExchangeTransactionSubmenu as _ExchangeTransactionSubmenu } from '../support/locators';
+import dataUser from '../data/dataUser';
 
 class ExchangeTransactionSubmenu {
     constructor(page) {
@@ -8,22 +8,21 @@ class ExchangeTransactionSubmenu {
     }
 
     async navigateToPage() {
-        await this.page.click(Locators.BudgetExecution.menu);
-        await this.page.click(Locators.ExchangeTransactionSubmenu.submenu);
+        await this.page.click(BudgetExecution.menu);
+        await this.page.click(_ExchangeTransactionSubmenu.submenu);
     }
     async checkCategoriesList() {
         const categories = [
             { key: 'cat1', text: 'Справочник валют' },
             { key: 'cat2', text: 'Курсы валют' },
             { key: 'cat3', text: 'Валютные расходы по выписке НБТ' }
-        ];
-    
+        ];    
         await Promise.all(categories.map(({ key, text }) => 
-            expect(this.page.locator(Locators.ExchangeTransactionSubmenu[key])).toHaveText(text)
+            expect(this.page.locator(_ExchangeTransactionSubmenu[key])).toHaveText(text)
         ));
     }
     
     
 }
 
-module.exports = ExchangeTransactionSubmenu;
+export default ExchangeTransactionSubmenu;

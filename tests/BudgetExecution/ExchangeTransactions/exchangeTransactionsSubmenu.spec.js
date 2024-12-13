@@ -1,7 +1,7 @@
-// @ts-check
-const { test, expect } = require('@playwright/test');
-const ExchangeTransactionSubmenu = require('../../../pages/BudExecExchangeTransacSubmenu');
-const Dashboard = require('../../../../pages/Dashboard');
+import 'module-alias/register';
+import { test, expect } from '@playwright/test';
+import ExchangeTransactionSubmenu from '@pages/BudExecExchangeTransacSubmenu';
+import Dashboard from '@pages/Dashboard';
 
 test.describe('Подменю: Валютные ОП', () => {
     let exchangeTransactionSubmenu;

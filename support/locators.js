@@ -789,7 +789,26 @@ ExchangeTransactionSubmenu:{
     cat2: "(//p[@title='currency_rates'])[1]",
     cat3: "(//p[@title='foreign_exchange_expenses'])[1]",
 },
+CurrenciesManual:{
+    categoryMenu: "(//p[@title='currencies_manual'])[1]",
+    addModalButton: "(//span[contains(text(),'Добавить')])[1]",
+    addCurrency: "(//p[contains(text(),'Добавить валюту')])[1]",
+    currNo: "(//input[@id='currenNum'])[1]",
+    currSymbol: "(//input[@id='currenSymbol'])[1]",
+    currNameRU: "(//input[@id='currenNameRU'])[1]",
+    currNameTJ: "(//input[@id='currenName'])[1]",
+    currNameEN: "(//input[@id='currenNameEN'])[1]",
+    row1: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[2]/div[1]/div[1]',
+    row2: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[3]/div[1]/div[1]',
+    row3: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[4]/div[1]/div[1]',
+    row4: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[5]/div[1]/div[1]',
+    row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[6]/div[1]/div[1]',
+    row6: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[7]/div[1]/div[1]',
+    row7: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[8]/div[1]/div[1]',
+    
 
+
+},
 
 
 
