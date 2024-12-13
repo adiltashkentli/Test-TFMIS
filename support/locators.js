@@ -730,7 +730,26 @@ BindingBZmentor: {
     row1: '//*[@id="root"]//div[1]/div[2]//div[2]/div[1]/div[1]/div/div',
     row2: '//*[@id="root"]//div[1]/div[2]//div[3]/div[1]/div[1]/div/div',
     row3: '//*[@id="root"]//div[1]/div[2]//div[4]/div[1]/div[1]/div/div'
-}
+},
+Curators: {
+    categoryMenu: "(//p[@title='curators'])[1]",
+    loginArea: '//div[2]/div[1]/div[1]/input[1]',
+    modalLoginArea: "(//input[@id='login'])[1]",
+    modalNameArea: "(//input[@id='second_Name'])[1]",
+    modalFirstNameArea: "(//input[@id='first_Name'])[1]",
+    row1: '//*[@id="root"]//div[1]//div[1]/div/div/div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[1]//div[1]/div/div/div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[1]//div[1]/div/div/div[4]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[1]//div[1]/div/div/div[5]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[1]//div[1]/div/div/div[6]/div[1]/div[1]/div/div',
+},
+
+
+
+
+
+
+
 }
 
 module.exports = Locators;
