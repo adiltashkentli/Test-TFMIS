@@ -723,7 +723,14 @@ CitiesManual:{
     line5: '//*[@id="root"]//div[2]/div[2]/div/div[1]/div[6]/div',
     edit: "(//*[name()='svg'])[33]",
 },
-
+BindingBZmentor: {
+    categoryMenu: "(//p[@title='bz_binding'])[1]",
+    budgetApp: "(//input[@id=':r15:'])[1]",
+    mentor: "(//input[@id=':r16:'])[1]",
+    row1: '//*[@id="root"]//div[1]/div[2]//div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[1]/div[2]//div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[1]/div[2]//div[4]/div[1]/div[1]/div/div'
+}
 }
 
 module.exports = Locators;
