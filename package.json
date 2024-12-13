@@ -12,5 +12,11 @@
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.8.2"
+  },  
+  "dependencies": {
+    "module-alias": "^2.2.3"    
+  },
+  "_moduleAliases": {
+    "@pages": "pages"
   }
 }

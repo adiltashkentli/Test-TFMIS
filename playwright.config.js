@@ -9,6 +9,9 @@ module.exports = defineConfig({
     headless: true, // Запуск браузера в headless режиме
     viewport: { width: 1280, height: 720 }, // Размер окна браузера
     baseURL: 'https://tfmis.vercel.app/', // Базовый URL
+    "paths": {
+      "@pages/*": ["src/pages/*"] // Настроим псевдоним
+    },
     screenshot: 'only-on-failure', // Скриншоты только при ошибках
     video: 'retain-on-failure', // Видео только при ошибках
   },
