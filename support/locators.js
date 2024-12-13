@@ -782,7 +782,13 @@ DebtManual:{
     yearInput: "(//input[@id='outlined-basic'])[5]",
     quantity: "(//input[@id='outlined-basic'])[6]",
     modalLoginArea2: "(//input[@id='outlined-basic'])[7]",
-}
+},
+ExchangeTransactionSubmenu:{
+    submenu: "(//span[contains(text(),'Валютные ОП')])[1]",
+    cat1: "(//p[@title='currencies_manual'])[1]",
+    cat2: "(//p[@title='currency_rates'])[1]",
+    cat3: "(//p[@title='foreign_exchange_expenses'])[1]",
+},
 
 
 
