@@ -743,7 +743,22 @@ Curators: {
     row4: '//*[@id="root"]//div[1]//div[1]/div/div/div[5]/div[1]/div[1]/div/div',
     row5: '//*[@id="root"]//div[1]//div[1]/div/div/div[6]/div[1]/div[1]/div/div',
 },
-
+BindingOfCurators: {
+    categoryMenu: "(//p[@title='binding_of_curators'])[1]",
+    selector: "(//div[@id='demo-simple-select'])[1]",
+    element2: "(//li[normalize-space()='Twenty'])[1]",
+    row1: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[2]/div[1]/div[1]/div',
+    row2: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[3]/div[1]/div[1]/div',
+    row3: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[4]/div[1]/div[1]/div',
+    row4: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[5]/div[1]/div[1]/div',
+    row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[6]/div[1]/div[1]/div',
+    row6: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[7]/div[1]/div[1]/div',
+    row7: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[8]/div[1]/div[1]/div',
+    row8: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[9]/div[1]/div[1]/div',
+    row9: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[10]/div[1]/div[1]/div',
+    row10: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[11]/div[1]/div[1]/div',
+    row11: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[12]/div[1]/div[1]/div',
+},
 
 
 
