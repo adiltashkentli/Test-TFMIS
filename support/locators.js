@@ -805,11 +805,18 @@ CurrenciesManual:{
     row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[6]/div[1]/div[1]',
     row6: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[7]/div[1]/div[1]',
     row7: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[8]/div[1]/div[1]',
-    
-
-
 },
-
+CurrencyRates: {
+    categoryMenu: "(//p[@title='currency_rates'])[1]",
+    currency: "(//input[@id='curr'])[1]",
+    rate: "(//input[@id='rate'])[1]",
+    nominal: "(//input[@id='nominal'])[1]",
+    row1: '//*[@id="root"]//div[2]/div/div[1]/div[2]//div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[2]/div/div[1]/div[2]//div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[2]/div/div[1]/div[2]//div[4]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[2]/div/div[1]/div[2]//div[5]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[2]/div/div[1]/div[2]//div[6]/div[1]/div[1]/div/div',
+}
 
 
 
