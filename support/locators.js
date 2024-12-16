@@ -816,7 +816,18 @@ CurrencyRates: {
     row3: '//*[@id="root"]//div[2]/div/div[1]/div[2]//div[4]/div[1]/div[1]/div/div',
     row4: '//*[@id="root"]//div[2]/div/div[1]/div[2]//div[5]/div[1]/div[1]/div/div',
     row5: '//*[@id="root"]//div[2]/div/div[1]/div[2]//div[6]/div[1]/div[1]/div/div',
-}
+},
+CurExpensesNBT: {
+    categoryMenu: "(//p[@title='foreign_exchange_expenses'])[1]",
+    checkAllRows: "(//input[@aria-label='Select all rows'])[1]",
+    firstCheckedRow: '//*[@id="root"]//div[1]/div[2]/span/input',
+    fifthCheckedRow: '//*[@id="root"]//div[6]/div[2]/span/input',
+    footerInput1: '//*[@id="root"]//div[3]/div/div[1]/div[1]/div/div/input',
+    footerInput2: '//*[@id="root"]//div[3]/div/div[1]/div[2]/div/div/input',
+    footerInput3: '//*[@id="root"]//div[3]/div/div[2]/div[1]/div/div/input',
+    footerInput4: '//*[@id="root"]//div[3]/div/div[2]/div[2]/div/div/input',
+    footerInput5: '//*[@id="root"]//div[3]/div/div[2]/div[3]/div/div/input',
+},
 
 
 
