@@ -828,7 +828,17 @@ CurExpensesNBT: {
     footerInput4: '//*[@id="root"]//div[3]/div/div[2]/div[2]/div/div/input',
     footerInput5: '//*[@id="root"]//div[3]/div/div[2]/div[3]/div/div/input',
 },
-
+BankSubmenu:{
+    submenu: "(//span[contains(text(),'Банк')])[1]",
+    cat1: "(//p[@title='bank_revenue'])[1]",
+    cat2: "(//p[@title='bank_access_rights'])[1]",
+    cat3: "(//p[@title='bank_expenses'])[1]",
+    cat4: "(//p[@title='registry_of_expenditures_bank_expenditures'][contains(text(),'Реестр расходов (расходы по банку)')])[1]",
+    cat5: "(//p[@title='reports_bank'])[1]",
+    cat6: "(//p[@title='manual'])[1]",
+    cat7: "(//p[@title='registry_of_expenditures_bank_expenditures'][contains(text(),'Реестр расходов (расходы по банку)')])[2]",
+    cat8: "(//p[@title='expenses_bank'])[1]",
+},
 
 
 

@@ -1,20 +1,20 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const DirectorySubmenu = require('../../../pages/BudExecDirectorySubmenu');
+const BankSubmenu = require('../../../pages/BudExecBankSubmenu');
 const Dashboard = require('../../../pages/Dashboard');
 
-test.describe('Подменю: Справочники', () => {
-    let directorySubmenu;
+test.describe('Подменю: Банк', () => {
+    let bankSubmenu;
     let dashboard;
 
     test.beforeEach(async ({ page }) => {
-        directorySubmenu = new DirectorySubmenu(page);
+        bankSubmenu = new BankSubmenu(page);
         dashboard = new Dashboard(page);
         await dashboard.login();
-        await directorySubmenu.navigateToPage();
+        await bankSubmenu.navigateToPage();
     });
     test('Check categories list', async () => {
-        await directorySubmenu.checkCategoriesList();
+        await bankSubmenu.checkCategoriesList();
     });
 
 })
