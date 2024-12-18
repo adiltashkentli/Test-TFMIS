@@ -12,7 +12,7 @@ class Dashboard {
         await this.page.goto('/');
         await this.page.fill(Locators.Dashboard.login, dataUser.loginData.user);
         await this.page.fill(Locators.Dashboard.password, dataUser.loginData.password);
-        await this.page.click(Locators.Dashboard.loginButton);
+        await this.page.locator(Locators.Dashboard.loginButton).click({ force: true });
     }
 
     async checkHeadings() {
