@@ -863,7 +863,23 @@ RevenueBank: {
     footer3: "(//input[@id='outlined-basic'])[4]",
     footer4: "(//input[@id='outlined-basic'])[5]",
 },
-
+BankAccessRights:{
+    categoryMenu: "(//p[@title='bank_access_rights'])[1]",
+    inputLogin: '//*[@id="outlined-basic-label"][1]',
+    usersListHeading: 'Список пользователей (Банк)',
+    mentorsListHeading: 'Список кураторов',
+    additionalAccessHeading: 'Доп. доступ',
+    choosedCuratorsHeading: 'Кураторы выбранного пользователя',
+    curatorsWithoutAccess: 'Кураторы не имеющие доступов',
+    specialAccess: 'Спец доступ (Банк)',
+    row1: '//*[@id="root"]//div[1]/div[2]/div[1]//div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[1]/div[2]/div[1]//div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[1]/div[2]/div[1]//div[4]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[1]/div[2]/div[1]//div[5]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[1]/div[2]/div[1]//div[6]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[1]/div[2]/div[1]//div[7]/div[1]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[1]/div[2]/div[1]//div[8]/div[1]/div[1]/div/div',
+},
 
 
 }
