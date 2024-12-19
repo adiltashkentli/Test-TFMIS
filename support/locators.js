@@ -914,6 +914,35 @@ BankExpenses: {
     footer3: "(//input[@id='outlined-basic'])[3]",
     footer4: "(//label[contains(text(),'Сумма выбранных эл.')])[1]",
 },
+ExpensesRegistry:{
+    categoryMenu: "(//p[@title='registry_of_expenditures_bank_expenditures'][contains(text(),'Реестр расходов (расходы по банку)')])[1]",
+    headerBut1: '//*[@id="root"]//div[3]/div[2]/div/div/div[1]/div[1]/div[1]/div[1]',
+    headerBut2: '//*[@id="root"]//div[3]/div[2]/div/div/div[1]/div[1]/div[2]/div[1]',
+    headerBut3: '//*[@id="root"]//div[3]/div[2]/div/div/div[1]/div[1]/div[3]/div[1]',
+    headerBut4: '//*[@id="root"]//div[3]/div[2]/div/div/div[1]/div[1]/div[4]/div[1]',
+    row1: '//*[@id="root"]//div[1]/div[2]//div[3]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[1]/div[2]//div[4]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[1]/div[2]//div[5]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[1]/div[2]//div[6]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[1]/div[2]//div[7]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[1]/div[2]//div[8]/div[1]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[1]/div[2]//div[9]/div[1]/div[1]/div/div',
+    row8: '//*[@id="root"]//div[1]/div[2]//div[10]/div[1]/div[1]/div/div',
+    row9: '//*[@id="root"]//div[1]/div[2]//div[11]/div[1]/div[1]/div/div',
+    row10: '//*[@id="root"]//div[1]/div[2]//div[12]/div[1]/div[1]/div/div',
+    row11: '//*[@id="root"]//div[1]/div[2]//div[13]/div[1]/div[1]/div/div',
+    row12: '//*[@id="root"]//div[1]/div[2]//div[14]/div[1]/div[1]/div/div',
+    row13: '//*[@id="root"]//div[1]/div[2]//div[15]/div[1]/div[1]/div/div',    
+},
+ReportsBank:{
+    categoryMenu: "(//p[@title='reports_bank'])[1]",
+    reportExcelButton: "(//p[contains(text(),'Отчет (Excel)')])[1]",
+    reportPDFbutton: "(//p[contains(text(),'Отчет (PDF)')])[1]",
+},
+
+
+
+
 
 }
 
