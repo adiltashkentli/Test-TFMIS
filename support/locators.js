@@ -934,6 +934,16 @@ ExpensesRegistry:{
     row12: '//*[@id="root"]//div[1]/div[2]//div[14]/div[1]/div[1]/div/div',
     row13: '//*[@id="root"]//div[1]/div[2]//div[15]/div[1]/div[1]/div/div',    
 },
+ReportsBank:{
+    categoryMenu: "(//p[@title='reports_bank'])[1]",
+    reportExcelButton: "(//p[contains(text(),'Отчет (Excel)')])[1]",
+    reportPDFbutton: "(//p[contains(text(),'Отчет (PDF)')])[1]",
+},
+
+
+
+
+
 }
 
 module.exports = Locators;

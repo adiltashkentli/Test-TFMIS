@@ -56,7 +56,7 @@ class ExpensesRegistry {
         { action: async () => {
             await this.page.click(Locators.RevenueBank.row11);
             await this.page.locator(Locators.RevenueBank.row11).press('ArrowRight');
-        }},
+        }},//not completed from front 👇🏻
         //{ locator: Locators.ExpensesRegistry.row12, expectedText: 'Получатель' },
         //{ locator: Locators.ExpensesRegistry.row13, expectedText: 'Банк получателя' }        
     ];
