@@ -939,7 +939,9 @@ ReportsBank:{
     reportExcelButton: "(//p[contains(text(),'Отчет (Excel)')])[1]",
     reportPDFbutton: "(//p[contains(text(),'Отчет (PDF)')])[1]",
 },
-
+Manual: {
+    categoryMenu: "(//p[@title='manual'])[1]",
+},
 
 
 
