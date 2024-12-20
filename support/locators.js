@@ -965,6 +965,13 @@ ExpensesBank:{
     footer3: "(//input[@id='outlined-basic'])[3]",
     footer4: "(//input[@id='outlined-basic'])[4]",
 },
+AdministrationSubmenu:{
+    submenu: "(//span[contains(text(),'Администрирование')])[1]",
+    cat1: "(//p[@title='accruals_and_deductions'])[1]",
+    cat2: "(//p[@title='processes'])[1]",
+    cat3: "(//p[@title='documents'])[1]",
+    cat4: "(//p[@title='constraints_of_expenses_on_items'])[1]",
+},
 
 
 
