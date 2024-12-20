@@ -939,8 +939,32 @@ ReportsBank:{
     reportExcelButton: "(//p[contains(text(),'Отчет (Excel)')])[1]",
     reportPDFbutton: "(//p[contains(text(),'Отчет (PDF)')])[1]",
 },
-
-
+Manual: {
+    categoryMenu: "(//p[@title='manual'])[1]",
+},
+ExpensesBank:{
+    categoryMenu: "(//p[@title='expenses_bank'])[1]",
+    row1: '//*[@id="root"]//div[1]/div/div/div[3]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[1]/div/div/div[4]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[1]/div/div/div[5]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[1]/div/div/div[6]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[1]/div/div/div[7]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[1]/div/div/div[8]/div[1]/div[1]/div/div',
+    row7: '//*[@id="root"]//div[1]/div/div/div[9]/div[1]/div[1]/div/div',
+    row8: '//*[@id="root"]//div[1]/div/div/div[10]/div[1]/div[1]/div/div',
+    row9: '//*[@id="root"]//div[1]/div/div/div[11]/div[1]/div[1]/div/div',
+    row10: '//*[@id="root"]//div[1]/div/div/div[12]/div[1]/div[1]/div/div',
+    row11: '//*[@id="root"]//div[1]/div/div/div[13]/div[1]/div[1]/div/div',
+    headerBut1: "(//p[contains(text(),'Выгрузить')])[1]",
+    headerBut2: "(//p[contains(text(),'Оплатить')])[1]",
+    headerBut3: "(//p[contains(text(),'Отказать')])[1]",
+    headerBut4: "(//p[contains(text(),'Отвергнуть РП')])[1]",
+    headerBut5: "(//p[normalize-space()='Test export'])[1]",
+    footer1: "(//input[@id='outlined-basic'])[1]",
+    footer2: "(//input[@id='outlined-basic'])[2]",
+    footer3: "(//input[@id='outlined-basic'])[3]",
+    footer4: "(//input[@id='outlined-basic'])[4]",
+},
 
 
 
