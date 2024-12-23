@@ -976,7 +976,15 @@ AdministrationSubmenu:{
 AccrualsAndDeductions:{
     categoryMenu: "(//p[@title='accruals_and_deductions'])[1]",
 },
-
+Processes:{
+    categoryMenu: "(//p[@title='processes'])[1]",
+    row1: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[2]/div[1]/div[1]/div/div',
+    row2: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[3]/div[1]/div[1]/div/div',
+    row3: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[4]/div[1]/div[1]/div/div',
+    row4: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[5]/div[1]/div[1]/div/div',
+    row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[6]/div[1]/div[1]/div/div',
+    codeArea: "(//input[@id=':r34:'])[1]",
+},
 
 
 }
