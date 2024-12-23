@@ -985,7 +985,11 @@ Processes:{
     row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[6]/div[1]/div[1]/div/div',
     codeArea: "(//input[@id=':r34:'])[1]",
 },
-
+Documents:{
+    categoryMenu: "(//p[@title='documents'])[1]",
+    editData: '//*[@id="root"]//div[2]/div[2]/div/div[1]/div[7]/div/div[1]',
+    deleteData: '//*[@id="root"]//div[2]/div[2]/div/div[1]/div[7]/div/div[2]',
+},
 
 }
 
