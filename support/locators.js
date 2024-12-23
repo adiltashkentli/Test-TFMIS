@@ -579,7 +579,8 @@ PayersBudgetOrg:{
     row2: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[3]/div[1]/div[1]/div/div',
     row3: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[4]/div[1]/div[1]/div/div',
     row4: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[5]/div[1]/div[1]/div/div',
-    row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[6]/div[1]/div[1]/div/div'
+    row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[6]/div[1]/div[1]/div/div',
+    row6: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[7]/div[1]/div[1]/div/div',
 },
 Contracts:{
     categoryMenu: "(//p[@title='contracts'])[1]",
@@ -971,6 +972,9 @@ AdministrationSubmenu:{
     cat2: "(//p[@title='processes'])[1]",
     cat3: "(//p[@title='documents'])[1]",
     cat4: "(//p[@title='constraints_of_expenses_on_items'])[1]",
+},
+AccrualsAndDeductions:{
+    categoryMenu: "(//p[@title='accruals_and_deductions'])[1]",
 },
 
 
