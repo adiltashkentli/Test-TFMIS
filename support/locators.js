@@ -985,7 +985,31 @@ Processes:{
     row5: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]/div[1]//div[6]/div[1]/div[1]/div/div',
     codeArea: "(//input[@id=':r34:'])[1]",
 },
-
+Documents:{
+    categoryMenu: "(//p[@title='documents'])[1]",
+    editData: '//*[@id="root"]//div[2]/div[2]/div/div[1]/div[7]/div/div[1]',
+    deleteData: '//*[@id="root"]//div[2]/div[2]/div/div[1]/div[7]/div/div[2]',
+},
+LimitationsOfExpenses: {
+    categoryMenu: "(//p[@title='constraints_of_expenses_on_items'])[1]",
+    checkAllBoxes: '//*[@id="root"]//div[2]/div/div/div[2]//div[2]//div/div[2]/div[1]//div/span/input',
+    childBoxes: '//*[@id="root"]//div[9]/div[2]/span/input',
+    modal1sheetHeader1: '//div[2]/div/div[1]/div[2]/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/div',
+    modal1sheetHeader2: '//div[2]/div[2]//div[3]/div[1]/div[1]/div[1]/div',
+    modal1sheetHeader3: '//div[2]/div[2]//div[4]/div[1]/div[1]/div[1]/div',
+    modal1sheetHeader4: '//div[2]/div[2]//div[5]/div[1]/div[1]/div[1]/div',
+    modal1sheetHeader5: '//div[2]/div[2]//div[6]/div[1]/div[1]/div[1]/div',
+    modal2sheetHeader1: '//div[3]/div/div[1]/div[2]/div[1]/div/div/div[2]/div[1]/div[1]/div[1]/div',
+    modal2sheetHeader2: '//div[3]/div/div[1]/div[2]//div[3]/div[1]/div[1]/div[1]/div',
+    modal2sheetHeader3: '//div[3]/div/div[1]/div[2]//div[4]/div[1]/div[1]/div[1]/div',
+    modal2sheetHeader4: '//div[3]/div/div[1]/div[2]//div[5]/div[1]/div[1]/div[1]/div',
+    modal2sheetHeader5: '//div[3]/div/div[1]/div[2]//div[6]/div[1]/div[1]/div[1]/div',
+    modal2sheetHeader6: '//div[3]/div/div[1]/div[2]//div[7]/div[1]/div[1]/div[1]/div',
+    modal2sheetHeader7: '//div[3]/div/div[1]/div[2]//div[8]/div[1]/div[1]/div[1]/div',
+    modal2sheetHeader8: '//div[3]/div/div[1]/div[2]//div[9]/div[1]/div[1]/div[1]/div',
+    prohibitButton: "(//p[contains(text(),'Запретить')])[1]",
+    cancelProhibitButton: "(//p[contains(text(),'Отменить запрет')])[1]",
+},
 
 }
 
